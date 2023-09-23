@@ -7,47 +7,76 @@
 	    left:0px;
 	    height: 10vh;
 	    width:100vw;
-	    background-color: #F2F2F2;
+	    background-color:#F2E744;
     }
 
     main{
 	    position:absolute;
 	    top:10vh;
 	    left:0px;
-	    height:400vh;
+	    height:90vh;
 	    width:100vw;
-	    background-color: #F2E744;
+	    background-color: floralwhite;
     }
 	.MainImg{
 		position:absolute;
 		width:100vw;
-		height:40vh;
+		height:90vh;
+		background:url("human.png") center no-repeat fixed;
+		background-size:150vh;
 	}
+	/*
 	.marquee {
         display: flex;
         white-space: nowrap;
         overflow: hidden;
         gap: 1rem;
-        font-size: 3rem;
+        font-size: 2rem;
 		z-index:1;
     }
-    .marquee-inner {
+	.marquee_r {
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+        gap: 1rem;
+        font-size: 2rem;
+		z-index:1;
+    }
+    .marquee-inner1 {
+        animation: marquee 30s linear infinite;
+	}
+	.marquee-inner2 {
+        animation: marquee_r 30s linear infinite;
+	}
+	.marquee-inner3 {
+        animation: marquee 30s linear infinite;
+	}
+	.marquee-inner4 {
+        animation: marquee_r 30s linear infinite;
+	}
+	.marquee-inner5 {
         animation: marquee 30s linear infinite;
 	}
 	@keyframes marquee {
 		0%{translate:0;}
 		100%{translate:calc(-100% - 1rem);}
 	}
+	@keyframes marquee_r {
+		100%{translate:0;}
+		0%{translate:calc(-100% - 1rem);}
+	}*/
 	
-	.WishBtn{
+	.TitleScale{
 		position: absolute;
-		top:10vh;
+		top:30vh;
 		left:20vw;
 		width:60vw;
-		height:25vh;
+		height:30vh;
 		z-index:2;
+		background-color: floralwhite;
 	}
-    .title{
+    .Title{
 		font-size:30px;
+		text-align: center;
 	}
 }
