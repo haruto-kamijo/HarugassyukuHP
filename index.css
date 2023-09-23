@@ -1,15 +1,11 @@
 /* CSS Document */
-@media screen and (max-width:1024px){
-    header{
-	    position:absolute;
-		font-size: 20px;
-	    top:0px;
-	    left:0px;
-	    height: 10vh;
-	    width:100vw;
-	    background-color:#F2E744;
-    }
+main{
+	font-family: vdl-logomarujr-pop-futoline, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
 
+@media screen and (max-width:1024px){
     main{
 	    position:absolute;
 	    top:10vh;
@@ -74,8 +70,10 @@
 		height:30vh;
 		z-index:2;
 		background-color: floralwhite;
+		box-shadow: 0 0 0 4px khaki;
+		box-sizing: border-box;
 	}
-    .Title{
+    .Title{ 
 		font-size:30px;
 		text-align: center;
 	}

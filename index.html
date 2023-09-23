@@ -5,13 +5,43 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<script src="https://code.jquery.com/jquery.min.js"></script>
 	<script src="./HeightMax.js"></script>
+	<link rel="stylesheet" href="CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="./header.css" />
     <link rel="stylesheet" type="text/css" href="./index.css" />
     <title>harugassyuku</title>
+	<script>
+		(function(d) {
+			var config = {kitId: 'txx2rmk',scriptTimeout: 3000,async: true},
+			h=d.documentElement,t=setTimeout(function(){
+				h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){
+				a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);
+	</script>
   </head>
 
   <body>
 	<header>
-		<p>豊田てらこや春合宿</p>
+		<div class="HeaderInner">
+        <h1 class="HeaderTitle HeaderTitle">
+          <a href="./index.html">
+            <div class="OurName">がくまち</div>
+          </a>
+        </h1>
+		<button class="HeaderHamburger Hamburger" id="JsHamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+		</div>
+		<nav class="HeaderNav Nav" id="JsNav">
+			  <ul class="NavMenuUl">
+				  <li class="NavMenuLi"><a class="NavText" href="./index.html">ホーム</a></li>
+				  <li class="NavMenuLi"><a class="NavText" href="">100人でしたいこと一覧</a></li>
+				  <li class="NavMenuLi"><a class="NavText" href="">小学生の方へ</a></li>
+				  <li class="NavMenuLi"><a class="NavText" href="">保護者の方へ</a></li>
+				  <li class="NavMenuLi"><a class="NavText" href="">高校生以上の方へ</a></li>
+				  <li class="NavMenuLi"><a class="NavText" href="">お問い合わせ</a></li>
+			  </ul>
+        </nav>
 	</header>
 	<main>
 	    <div class="MainImg">
@@ -43,5 +73,6 @@
 			</div>   --> 
 		</div>
 	</main>
+	<script type="text/javascript" src="Hamburger.js"></script>
   </body>
 </html>

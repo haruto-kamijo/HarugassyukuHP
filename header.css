@@ -1,0 +1,163 @@
+/* CSS Document */
+header{
+	font-family: mochiy-pop, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color:#fffff9;
+}
+header{
+	    position:absolute;
+		font-size: 15px;
+	    top:0px;
+	    left:0px;
+	    height: 10vh;
+	    width:100vw;
+	    background-color:#F2E744;
+		border-bottom: solid floralwhite;
+}
+
+.OurName{
+	position: absolute;
+	top:2vh;
+	left:2vh;
+	color: #fffff9;
+}
+
+.NavMenuUl{
+	position: fixed;
+	width:100%;
+	font-size:30px;
+	top:140px;
+	text-align:left;
+}
+.NavText{
+	color: #fffff9;
+	text-decoration: none;
+	border-bottom:2px solid #fffff9;
+}
+
+.NavMenuLi{
+	padding-top: 3vh;
+}
+
+.HeaderInner {
+  background-color:#F2E744;
+  padding: 0 20px 30px 0px; /*左右の余白確保*/
+  display: flex; /*ロゴとハンバーガーメニューを横に並べる*/
+  align-items: center;
+  justify-content: space-between;
+  height: inherit; /*親要素の高さを継承*/
+  position: relative;
+}
+
+
+/* ヘッダーのナビ部分 */
+.HeaderNav {
+  position: absolute;
+  right: 0;
+  left: 0px;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  opacity:0;
+  transition:all 1.5s;
+  background-color: #F2E744; /*ハンバーガーメニュークリック時のナビゲーションメニュー背景色*/
+  z-index:4;
+}
+
+.HeaderNav.Show {
+  height: 100vh;
+  visibility: visible;
+  opacity:1;
+  transition: all .75s;
+}
+
+/* ハンバーガーメニュー */
+.Hamburger,
+.Hamburger span {
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+}
+.Hamburger {
+  position: fixed;
+  right:3vh;
+  top:3vh;
+  width: 32px;
+  height: 30px;
+  background: none;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+  z-index:5;
+}
+.Hamburger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fffff9;
+  border-radius: 2px;
+}
+.Hamburger span:nth-of-type(1) {
+  top: 0;
+}
+.Hamburger span:nth-of-type(2) {
+  top: 12.5px;
+}
+.Hamburger span:nth-of-type(3) {
+  bottom: 0px;
+}
+.Hamburger::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  content: '';
+  width: 42px;
+  height: 42px;
+  margin: -23px 0 0 -23px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all .75s;
+}
+
+.Hamburger.Active span:nth-of-type(1) {
+  transform: translateY(12.5px) rotate(-45deg);
+}
+.Hamburger.Active span:nth-of-type(2) {
+  left: 60%;
+  opacity: 0;
+  animation: active-menu12-bar02 .8s forwards;
+}
+@keyframes active-menu12-bar02 {
+  100% {
+    height: 0;
+  }
+}
+.Hamburger.Active span:nth-of-type(3) {
+  transform: translateY(-12.5px) rotate(45deg);
+}
+.Hamburger.Active::after {
+  animation: active-menu12 .4s .25s forwards;
+}
+@keyframes active-menu12 {
+  0% {
+    border-color: transparent;
+    transform: rotate(0);
+  }
+  25% {
+    border-color: transparent #fffff9 transparent transparent;
+  }
+  50% {
+    border-color: transparent #fffff9 #fffff9 transparent;
+  }
+  75% {
+    border-color: transparent #fffff9 #fffff9 #fffff9;
+  }
+  100% {
+    border-color: #fffff9;
+    transform: rotate(-680deg);
+  }
+}
