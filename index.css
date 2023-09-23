@@ -1,2 +1,53 @@
 /* CSS Document */
+@media screen and (max-width:1024px){
+    header{
+	    position:absolute;
+		font-size: 20px;
+	    top:0px;
+	    left:0px;
+	    height: 10vh;
+	    width:100vw;
+	    background-color: #F2F2F2;
+    }
 
+    main{
+	    position:absolute;
+	    top:10vh;
+	    left:0px;
+	    height:400vh;
+	    width:100vw;
+	    background-color: #F2E744;
+    }
+	.MainImg{
+		position:absolute;
+		width:100vw;
+		height:40vh;
+	}
+	.marquee {
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+        gap: 1rem;
+        font-size: 3rem;
+		z-index:1;
+    }
+    .marquee-inner {
+        animation: marquee 30s linear infinite;
+	}
+	@keyframes marquee {
+		0%{translate:0;}
+		100%{translate:calc(-100% - 1rem);}
+	}
+	
+	.WishBtn{
+		position: absolute;
+		top:10vh;
+		left:20vw;
+		width:60vw;
+		height:25vh;
+		z-index:2;
+	}
+    .title{
+		font-size:30px;
+	}
+}
