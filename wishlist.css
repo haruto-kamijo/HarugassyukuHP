@@ -1,0 +1,52 @@
+/* CSS Document */
+main{
+	font-family: vdl-logomarujr-pop-futoline, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+@media screen and (max-width:1024px){
+    main{
+	    position:absolute;
+	    top:10vh;
+	    left:0px;
+	    height:90vh;
+	    width:100vw;
+	    background-color: floralwhite;
+    }
+	.MainImg{
+		position:absolute;
+		width:100vw;
+		height:90vh;
+		background:url("human.png") center no-repeat fixed;
+		background-size:150vh;
+		z-index: 2;
+	}
+	.WishTitle{
+		font-size:30px;
+		text-align: center;
+		position:absolute;
+		top:2vh;
+		width: 60vw;
+		height: 10vh;
+		line-height: 10vh;
+		margin:0 20vw;
+		border: solid 1px #999;
+		font-family: mochiy-pop, sans-serif;
+	    font-style: normal;
+	    font-weight: 400;
+		color: black;
+		background-color: floralwhite;
+		z-index:3; 
+	}
+	.WishList{
+		position: relative;
+		top:15vh;
+		display: inline-block;
+		text-align: center;
+		font-size:20px;
+		width:40%;
+		border: solid 1px #999;
+		margin:4%;
+		background-color: floralwhite;
+	}
+}
