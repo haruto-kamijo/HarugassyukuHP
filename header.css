@@ -12,7 +12,7 @@ header{
 	    left:0px;
 	    height: 10vh;
 	    width:100vw;
-	    background-color:#F2E744;
+	    background-color:#fbd26b;
 		border-bottom: solid floralwhite;
 }
 
@@ -41,7 +41,7 @@ header{
 }
 
 .HeaderInner {
-  background-color:#F2E744;
+  background-color:#fbd26b;
   padding: 0 20px 30px 0px; /*左右の余白確保*/
   display: flex; /*ロゴとハンバーガーメニューを横に並べる*/
   align-items: center;
@@ -62,7 +62,7 @@ header{
   visibility: hidden;
   opacity:0;
   transition:all 1.5s;
-  background-color: #F2E744; /*ハンバーガーメニュークリック時のナビゲーションメニュー背景色*/
+  background-color: #fbd26b; /*ハンバーガーメニュークリック時のナビゲーションメニュー背景色*/
   z-index:4;
 }
 
