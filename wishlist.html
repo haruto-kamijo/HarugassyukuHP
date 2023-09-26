@@ -46,12 +46,20 @@
 	<main>
 		<div class="WishTitle">やりたいこと一覧</div>
 	    <div class="MainImg" ontouchstart="">
-			<button class="WishList area btn btn-border" id="ViewButton1"><span>おにごっこしたい</span></button>
-			<button class="WishList area btn btn-border" id="ViewButton2"><span>満漢全席食べたい</span></button>
-			<button class="WishList area btn btn-border" id="ViewButton3"><span>ギネス挑戦したい</span></button>
-			<button class="WishList area btn btn-border" id="ViewButton4"><span>じゃんけん列車したい</span></button>
+			<div id="WishMain" class="view1 show">
+			    <button class="WishList area btn btn-border trigger" id="ViewButton0" value="0"><div class="WishCard"><span>おにごっこしたい</span></div></button>
+			    <button class="WishList area btn btn-border trigger" id="ViewButton1" value="1"><div class="WishCard"><span>満漢全席食べたい</span></div></button>
+			    <button class="WishList area btn btn-border trigger" id="ViewButton2" value="2"><div class="WishCard"><span>ギネス挑戦したい</span></div></button>
+			    <button class="WishList area btn btn-border trigger" id="ViewButton3" value="3"><div class="WishCard"><span>じゃんけん列車したい</span></div></button>
+			</div>
+			<div id="WishContent" class="WishContent view2 hide">
+				<div id="WishName" class="WishName">おにごっこしたい</div>
+				<div id="WishDetail" class="WishDetail">100人でふえおにをしてみたい。欲を言うならどろけいもしたい。</div>
+				<button class="trigger" id="CloseButton">×</button>
+			</div>
 		</div>
 	</main>
-	<script type="text/javascript" src="Hamburger.js"></script>
+	<script type="text/javascript" src="./Hamburger.js"></script>
+	<script type="text/javascript" src="./OutLineShow.js"></script>
   </body>
 </html>
