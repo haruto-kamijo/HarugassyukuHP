@@ -4,6 +4,10 @@ main{
 	font-style: normal;
 	font-weight: 400;
 }
+label, input {
+  display: block;
+}
+
 *,
 *:before,
 *:after {
@@ -60,65 +64,57 @@ button.btn {
 		background-blend-mode: lighten;
 		background-size:150vh;
 	}
-	/*
-	.marquee {
-        display: flex;
-        white-space: nowrap;
-        overflow: hidden;
-        gap: 1rem;
-        font-size: 2rem;
-		z-index:1;
-    }
-	.marquee_r {
-        display: flex;
-        white-space: nowrap;
-        overflow: hidden;
-        gap: 1rem;
-        font-size: 2rem;
-		z-index:1;
-    }
-    .marquee-inner1 {
-        animation: marquee 30s linear infinite;
+	.WishTitle{
+		position: absolute;
+		top:10vh;
+		text-align: center;
+		width:100vw;
+		font-size:20px;
+		font-family: mochiy-pop, sans-serif;
+	    font-style: normal;
+	    font-weight: 400;
+		color: black;
 	}
-	.marquee-inner2 {
-        animation: marquee_r 30s linear infinite;
-	}
-	.marquee-inner3 {
-        animation: marquee 30s linear infinite;
-	}
-	.marquee-inner4 {
-        animation: marquee_r 30s linear infinite;
-	}
-	.marquee-inner5 {
-        animation: marquee 30s linear infinite;
-	}
-	@keyframes marquee {
-		0%{translate:0;}
-		100%{translate:calc(-100% - 1rem);}
-	}
-	@keyframes marquee_r {
-		100%{translate:0;}
-		0%{translate:calc(-100% - 1rem);}
-	}*/
-	
-	.TitleScale{
+	.WishName{
 		position: absolute;
 		top:15vh;
-		left:20vw;
-		width:60vw;
-		height:30vh;
-		z-index:2;
-		background-color: floralwhite;
-		box-shadow: 0 0 0 4px khaki;
-		box-sizing: border-box;
-	}
-    .Title{ 
-		font-size:30px;
 		text-align: center;
+		width:60vw;
+		height:8vh;
+		margin: 0 20vw;
+		font-size:20px;
+		font-family: mochiy-pop, sans-serif;
+	    font-style: normal;
+	    font-weight: 400;
+		color: black;
 	}
-	.IntoForm{
+	.WishDetail{
 		position: absolute;
-		top:60vh;
+		top:25vh;
+		text-align: center;
+		width:100vw;
+		font-size:20px;
+		font-family: mochiy-pop, sans-serif;
+	    font-style: normal;
+	    font-weight: 400;
+		color: black;
+	}
+	.OutLine{
+		position: absolute;
+		top:30vh;
+		text-align: center;
+		width:60vw;
+		height:35vh;
+		margin: 0 20vw;
+		font-size:20px;
+		font-family: mochiy-pop, sans-serif;
+	    font-style: normal;
+	    font-weight: 400;
+		color: black;
+	}
+	.SubmitButton{
+		position: absolute;
+		top:70vh;
 		text-align: center;
 		width:60vw;
 		margin:0 20vw;

@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script src="Garlic.js-1.4.2/garlic.js"></script>
+    <script src="node_modules/jquery/src/jquery.js"></script>
 	<script src="https://code.jquery.com/jquery.min.js"></script>
 	<script src="./HeightMax.js"></script>
 	<link rel="stylesheet" href="./reset.css">
 	<link rel="stylesheet" type="text/css" href="./header.css" />
-    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <link rel="stylesheet" type="text/css" href="./wishform.css" />
     <title>harugassyuku</title>
 	<script>
 		(function(d) {
@@ -46,13 +48,13 @@
 	</header>
 	<main>
 	    <div class="MainImg">
-			<div class="TitleScale">  
-		       <h1 class="Title">
-				   <p>100人で</p>
-				   <p>○○したい！！</p>
-			   </h1>
-	        </div>
-			<button class="IntoForm btn btn-border" onClick="location.href='./wishform.html'">したいことを書く</button>
+			<form>
+				<label for="WishName" class="WishTitle">タイトル</label>
+				<input id="WishName" class="WishName" type="text" name="WishName" placeholder="したいことを書いてね">
+				<label for="OutLine" class="WishDetail">詳細</label>
+				<textarea id="OutLine" class="OutLine" name="OutLine" rows="6" placeholder="したいことの詳細を書いてね"></textarea>
+				<button  type="submit" class="SubmitButton btn btn-border">送信</button>
+			</form>
 		</div>
 	</main>
 	<script type="text/javascript" src="./Hamburger.js"></script>
