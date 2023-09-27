@@ -91,12 +91,44 @@ button.btn {
 		background-color: floralwhite;
 	}
 	.WishContent{
+		font-family: mochiy-pop, sans-serif;
+	    font-style: normal;
+	    font-weight: 400;
+		color: black;
 		position: absolute;
 		top:20vh;
 		height:60vh;
 		width:60vw;
 		margin:0 20vw;
+		background-color: floralwhite;
+		border:solid 3px #999;
 	}
+	.WishName{
+		text-align: center;
+		position: absolute;
+		width:100%;
+		font-size:30px;
+		margin: 5% 0;
+		border-bottom:solid 3px #999;
+	}
+	.WishDetail{
+		text-align: center;
+		position: absolute;
+		top:30%;
+		height:60%;
+		width:80%;
+		margin: 0 10%;
+		font-size:24px;
+	}
+	.CloseButton{
+		text-align: center;
+		position: absolute;
+		top:85%;
+		left:27vw;
+		
+	}
+	
+	
 	button.btn-border {
         border: 1px solid #000;
         border-radius: 0;
@@ -106,6 +138,27 @@ button.btn {
         color: #fff;
         background: #000;
     }
+	button.btn--circle {
+        width: 6vh;
+        height: 6vh;
+        padding: 0;
+        background: #fff;
+        border-radius: 50%;
+        -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+        box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    }
+
+    button.btn--circle i {
+        font-size: 150%;
+        line-height: 60px;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        letter-spacing: 0;
+    }
+    button.btn--circle:hover i {
+        line-height: 55px;
+    }
+	
     .hide{
         opacity: 0;
         visibility: hidden;
