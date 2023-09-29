@@ -48,10 +48,7 @@
 		<div class="WishTitle">やりたいこと一覧</div>
 	    <div class="MainImg" ontouchstart="">
 			<div id="WishMain" class="view1 show">
-			    <button class="WishList area btn btn-border trigger" id="ViewButton0" value="0"><div class="WishCard"><span>おにごっこしたい</span></div></button>
-			    <button class="WishList area btn btn-border trigger" id="ViewButton1" value="1"><div class="WishCard"><span>満漢全席食べたい</span></div></button>
-			    <button class="WishList area btn btn-border trigger" id="ViewButton2" value="2"><div class="WishCard"><span>ギネス挑戦したい</span></div></button>
-			    <button class="WishList area btn btn-border trigger" id="ViewButton3" value="3"><div class="WishCard"><span>じゃんけん列車したい</span></div></button>
+			    <!--<button class="WishList area btn btn-border trigger" id="ViewButton0" value="0"><div class="WishCard"><span>おにごっこしたい</span></div></button><button class="WishList area btn btn-border trigger" id="ViewButton1" value="1"><div class="WishCard"><span>満漢全席食べたい</span></div></button><button class="WishList area btn btn-border trigger" id="ViewButton2" value="2"><div class="WishCard"><span>ギネス挑戦したい</span></div></button><button class="WishList area btn btn-border trigger" id="ViewButton3" value="3"><div class="WishCard"><span>じゃんけん列車したい</span></div></button>-->
 			</div>
 			<div id="WishContent" class="WishContent view2 hide">
 				<div id="WishName" class="WishName"></div>
@@ -70,17 +67,48 @@
 		const app = initializeApp(firebaseConfig);
         const database = getDatabase(app);
         const dbRef = ref(getDatabase());
+		let namelist=[];
+		let outline=[];
+		let number=0;
         get(child(dbRef, `numbers`)).then((snapshot) => {
-        if (snapshot.exists()) {
-             console.log(snapshot.val());
-        } else {
-             console.log("No data available");
-        }
-        }).catch((error) => {
-             console.error(error);
-        });
+        snapshot.forEach((childSnapshot) => {
+            if (snapshot.exists()) {
+                console.log(childSnapshot.val().title);
+				console.log(childSnapshot.val().detail);
+				document.getElementById("WishMain").insertAdjacentHTML('beforeend','<button class="WishList area btn btn-border trigger" value="'+String(number)+'"><div class="WishCard"><span>'+childSnapshot.val().title+'</span></div></button>');
+				namelist.push(childSnapshot.val().title);
+				outline.push(childSnapshot.val().detail);
+				number+=1;
+				console.log(document.getElementById("WishMain").innerHTML);
+            }
+			else {
+                console.log("No data available");
+            }
+            })
+			{
+                onlyOnce: true;
+			}
+         });
+		 const wishname=document.getElementById("WishName");
+         const wishdetail=document.getElementById("WishDetail");
+
+         const target1 = document.querySelector('.view1');
+         const target2 = document.querySelector('.view2');
+         const trigger = document.querySelectorAll(".trigger").forEach(function (trigger) {
+         trigger.addEventListener('click', () => {
+             target1.classList.toggle('hide');  
+             target1.classList.toggle('show');
+	         target2.classList.toggle('hide');  
+             target2.classList.toggle('show');
+         }, false);});
+         const button = document.querySelectorAll(".WishList").forEach(function (button) {
+	        button.addEventListener('click', {value: `${button.value}`, handleEvent: onClickButton});
+         })
+         function onClickButton() {
+	        wishname.innerHTML=namelist[this.value];
+	        wishdetail.innerHTML=outline[this.value];
+         }
 	</script>
 	<script type="text/javascript" src="./Hamburger.js"></script>
-	<script type="text/javascript" src="./OutLineShow.js"></script>
   </body>
 </html>
