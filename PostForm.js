@@ -1,24 +1,14 @@
-import firebase from "firebase/app";
-import "firebase/compat/database";
-
-// TODO: Replace the following with your app's Firebase project configuration
-// See: https://firebase.google.com/docs/web/learn-more#config-object
-const firebaseConfig = {
-  // ...
-  // The value of `databaseURL` depends on the location of the database
-  databaseURL: "https://DATABASE_NAME.firebaseio.com",
-};
-
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-
-
-// Initialize Realtime Database and get a reference to the service
-const database = firebase.database();
-function writeUserData(userId, name, email, imageUrl) {
-  firebase.database().ref('users/' + userId).set({
-    username: name,
-    email: email,
-    profile_picture : imageUrl
-  });
+if(document.getElementById("SubmitButton")){
+	document.getElementById("SubmitButton").addEventListener('click', (e) =>{
+		e.preventDefault();
+		console.log("1");
+		const db = getDatabase();
+		const newPostKey = push(child(ref(db), 'number')).key;
+		const WishName=WishForm.WishName.value;
+		const WishDetail=WishForm.OutLine.value;
+        push(ref(db, 'numbers/' + newPostKey), {
+        title: WishName,
+        detail:WishDetail,
+		});
+	},false);
 }

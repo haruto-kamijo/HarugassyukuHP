@@ -48,15 +48,43 @@
 	</header>
 	<main>
 	    <div class="MainImg">
-			<form>
+			<form name="WishForm" id="WishForm">
 				<label for="WishName" class="WishTitle">タイトル</label>
 				<input id="WishName" class="WishName" type="text" name="WishName" placeholder="したいことを書いてね">
 				<label for="OutLine" class="WishDetail">詳細</label>
 				<textarea id="OutLine" class="OutLine" name="OutLine" rows="6" placeholder="したいことの詳細を書いてね"></textarea>
-				<button  type="submit" class="SubmitButton btn btn-border">送信</button>
+				<button type="submit" id="SubmitButton" class="SubmitButton btn btn-border">送信</button>
 			</form>
 		</div>
 	</main>
+	<script type="module">
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+		import { getDatabase, ref, child, push, update } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
+		
+		const firebaseConfig = {
+			databaseURL:"https://harugassyukuhp-8c700-default-rtdb.asia-southeast1.firebasedatabase.app/"
+        };
+		const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+		const Submit=document.getElementById("SubmitButton");
+		if(Submit){
+	        Submit.addEventListener('click', (e) =>{
+		        e.preventDefault();
+	          	console.log("1");
+				const WishName=WishForm.WishName.value;
+                const WishDetail=WishForm.OutLine.value;
+				if(WishName){
+					document.getElementById("WishForm").reset();
+					console.log("2");
+        		    const db = getDatabase();
+                    push(ref(db, 'numbers/'), {
+                    title: WishName,
+                    detail:WishDetail,
+     		        });
+				}		
+    	    },false);
+        }
+	</script>
 	<script type="text/javascript" src="./Hamburger.js"></script>
   </body>
 </html>
