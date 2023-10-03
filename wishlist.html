@@ -61,53 +61,66 @@
 		import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
 		import { getDatabase, ref, child, get } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
 		
-		const firebaseConfig = {
+	    const firebaseConfig = {
 			databaseURL:"https://harugassyukuhp-8c700-default-rtdb.asia-southeast1.firebasedatabase.app/"
         };
-		const app = initializeApp(firebaseConfig);
-        const database = getDatabase(app);
-        const dbRef = ref(getDatabase());
-		let namelist=[];
-		let outline=[];
-		let number=0;
-        get(child(dbRef, `numbers`)).then((snapshot) => {
-        snapshot.forEach((childSnapshot) => {
-            if (snapshot.exists()) {
-                console.log(childSnapshot.val().title);
-				console.log(childSnapshot.val().detail);
-				document.getElementById("WishMain").insertAdjacentHTML('beforeend','<button class="WishList area btn btn-border trigger" value="'+String(number)+'"><div class="WishCard"><span>'+childSnapshot.val().title+'</span></div></button>');
-				namelist.push(childSnapshot.val().title);
-				outline.push(childSnapshot.val().detail);
-				number+=1;
-				console.log(document.getElementById("WishMain").innerHTML);
-            }
-			else {
-                console.log("No data available");
-            }
-            })
-			{
-                onlyOnce: true;
-			}
-         });
-		 const wishname=document.getElementById("WishName");
-         const wishdetail=document.getElementById("WishDetail");
-
-         const target1 = document.querySelector('.view1');
-         const target2 = document.querySelector('.view2');
-         const trigger = document.querySelectorAll(".trigger").forEach(function (trigger) {
-         trigger.addEventListener('click', () => {
+		window.onload=function(){
+		    const app = initializeApp(firebaseConfig);
+            const database = getDatabase(app);
+            const dbRef = ref(getDatabase());
+	    	let namelist=[];
+	    	let outline=[];
+	    	let number=0;
+			const wishname=document.getElementById("WishName");
+            const wishdetail=document.getElementById("WishDetail");
+			const target1 = document.querySelector('.view1');
+            const target2 = document.querySelector('.view2');
+            
+			var observer = new MutationObserver(function(){
+				const trigger = document.querySelectorAll(".trigger").forEach(function (trigger) {
+			trigger.addEventListener('click', () => {
              target1.classList.toggle('hide');  
              target1.classList.toggle('show');
 	         target2.classList.toggle('hide');  
              target2.classList.toggle('show');
-         }, false);});
-         const button = document.querySelectorAll(".WishList").forEach(function (button) {
-	        button.addEventListener('click',{value: `${button.value}`, handleEvent: onClickButton});
-         })
-         function onClickButton() {
-	        wishname.innerHTML=namelist[this.value];
-	        wishdetail.innerHTML=outline[this.value];
-         }
+            }, false);});
+		  
+            const button = document.querySelectorAll(".WishList").forEach(function (button) {
+	            button.addEventListener('click',{value: `${button.value}`, handleEvent: onClickButton});
+            })
+            function onClickButton() {
+	            wishname.innerHTML=namelist[this.value];
+	            wishdetail.innerHTML=outline[this.value];
+            }
+            });
+
+            const elem = document.getElementById('WishMain');
+            const config = {
+               childList: true
+            };
+			
+            observer.observe(elem, config);
+			
+            get(child(dbRef, `numbers`)).then((snapshot) => {
+            snapshot.forEach((childSnapshot) => {
+                if (snapshot.exists()) {
+                    console.log(childSnapshot.val().title);
+			    	console.log(childSnapshot.val().detail);
+					document.getElementById("WishMain").insertAdjacentHTML('beforeend','<button class="WishList area btn btn-border trigger" value="'+String(number)+'" ><div class="WishCard"><span>'+childSnapshot.val().title+'</span></div></button>');
+			    	namelist.push(childSnapshot.val().title);
+			    	outline.push(childSnapshot.val().detail);
+			    	number+=1;
+			    	console.log(document.getElementById("WishMain").innerHTML);
+                }
+			    else {
+                    console.log("No data available");
+                }
+                })
+			    {
+                    onlyOnce: true;
+			    }
+            });
+		}
 	</script>
 	<script type="text/javascript" src="./Hamburger.js"></script>
   </body>
