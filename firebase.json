@@ -1,6 +1,10 @@
 {
-  "hosting":{
-    "site":"harugassyukuhp-8c700",
-    "public":"public"
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
   }
 }

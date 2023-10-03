@@ -102,7 +102,7 @@
              target2.classList.toggle('show');
          }, false);});
          const button = document.querySelectorAll(".WishList").forEach(function (button) {
-	        button.addEventListener('click', {value: `${button.value}`, handleEvent: onClickButton});
+	        button.addEventListener('click',{value: `${button.value}`, handleEvent: onClickButton});
          })
          function onClickButton() {
 	        wishname.innerHTML=namelist[this.value];
