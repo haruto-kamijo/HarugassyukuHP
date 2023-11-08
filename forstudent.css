@@ -47,14 +47,14 @@ button.btn {
 	    position:absolute;
 	    top:10vh;
 	    left:0px;
-	    height:90vh;
+	    height:300vh;
 	    width:100vw;
 	    background-color: floralwhite;
     }
 	.MainImg{
-		position:absolute;
+		position:relative;
 		width:100vw;
-		height:90vh;
+		height:60vh;
 		background:url("human.png") center no-repeat fixed;
 		background-color: rgba(255,255,255,0.6);
 		background-blend-mode: lighten;
@@ -103,28 +103,41 @@ button.btn {
 	
 	.TitleScale{
 		position: absolute;
-		top:15vh;
-		left:20vw;
-		width:60vw;
-		height:30vh;
+        top:5vh;
+        left:10vw;
+		width:80vw;
+		height:40vh;
 		z-index:2;
-		background-color: floralwhite;
-		box-shadow: 0 0 0 4px khaki;
+		background-color:floralwhite;
+        border: 1px solid #fbd26b;
+		/*box-shadow: 0 0 0 4px khaki;*/
 		box-sizing: border-box;
 	}
     .Title{
-		font-size:30px;
+		font-size:23px;
 		text-align: center;
-        margin:12vh 0vh;
+        margin:4vh 0vh;
 	}
-	.IntoForm{
-		position: absolute;
-		top:55vh;
-		text-align: center;
-		width:60vw;
-		margin:0 20vw 5vh;
-	}
-	
+    .Topix{
+        margin:2vh 0;
+        text-decoration: underline;
+    }
+    .Terakoya{
+        position:absolute;
+        top:60vh;
+		width:100vw;
+		height:100vh;
+		z-index:2;
+		background-color:floralwhite;
+		/*box-shadow: 0 0 0 4px khaki;*/
+		box-sizing: border-box;
+    }
+    .TerakoyaTi{
+        font-size:30px;
+    }
+    .TerakoyaEx{
+        font-size:24px;
+    }
 	button.btn-border {
         border: 1px solid #000;
         border-radius: 0;

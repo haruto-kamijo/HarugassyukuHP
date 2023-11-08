@@ -6,7 +6,7 @@ header{
 	color:#fffff9;
 }
 header{
-	    position:absolute;
+	    position:fixed;
 		font-size: 15px;
 	    top:0px;
 	    left:0px;
@@ -28,6 +28,7 @@ header{
 	width:100%;
 	font-size:30px;
 	top:15vh;
+    left:5vw;
 	text-align:left;
 }
 .NavText{
