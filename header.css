@@ -14,6 +14,7 @@ header{
 	    width:100vw;
 	    background-color:#fbd26b;
 		border-bottom: solid floralwhite;
+        z-index: 4;
 }
 
 .OurName{
@@ -30,6 +31,7 @@ header{
 	top:15vh;
     left:5vw;
 	text-align:left;
+    z-index: 5;
 }
 .NavText{
 	color: #fffff9;
