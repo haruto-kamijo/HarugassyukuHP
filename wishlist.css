@@ -48,14 +48,14 @@ button.btn {
 	    position:absolute;
 	    top:10vh;
 	    left:0px;
-	    height:90vh;
+	    height:150vh;
 	    width:100vw;
 	    background-color: floralwhite;
     }
 	.MainImg{
 		position:absolute;
 		width:100vw;
-		height:90vh;
+		height:150vh;
 		background:url("human.png") center no-repeat fixed;
 		background-color: rgba(255,255,255,0.6);
 		background-blend-mode: lighten;
@@ -95,8 +95,8 @@ button.btn {
 	    font-style: normal;
 	    font-weight: 400;
 		color: black;
-		position: absolute;
-		top:20vh;
+		position: fixed;
+		top:25vh;
 		height:60vh;
 		width:60vw;
 		margin:0 20vw;
@@ -105,24 +105,25 @@ button.btn {
 	}
 	.WishName{
 		text-align: center;
-		position: absolute;
-		width:100%;
-		font-size:30px;
+		position: fixed;
+		width:59vw;
+        height:3vh;
+		font-size:26px;
 		margin: 5% 0;
 		border-bottom:solid 3px #999;
 	}
 	.WishDetail{
 		text-align: center;
-		position: absolute;
-		top:30%;
-		height:60%;
-		width:80%;
-		margin: 0 10%;
+		position: fixed;
+		top:33vh;
+		height:60vh;
+		width:59vw;
+		/*margin: 0 10%;*/
 		font-size:24px;
 	}
 	.CloseButton{
 		text-align: center;
-		position: absolute;
+		position: fixed;
 		width:20%;
 		height:15%;
 		top:85%;
