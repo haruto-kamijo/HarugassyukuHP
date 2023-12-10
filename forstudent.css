@@ -47,7 +47,7 @@ button.btn {
 	    position:absolute;
 	    top:10vh;
 	    left:0px;
-	    height:300vh;
+	    height:250vh;
 	    width:100vw;
 	    background-color: floralwhite;
     }
@@ -119,23 +119,41 @@ button.btn {
         margin:4vh 0vh;
 	}
     .Topix{
+        position: relative;
         margin:2vh 0;
         text-decoration: underline;
     }
     .Terakoya{
         position:absolute;
         top:60vh;
-		width:100vw;
-		height:100vh;
+		width:90vw;
+		height:180vh;
+        margin: 0vh 5vw;
 		z-index:2;
 		background-color:floralwhite;
 		/*box-shadow: 0 0 0 4px khaki;*/
 		box-sizing: border-box;
     }
+    .StudentDetail{
+        height:90vh;
+    }
+    .StudentTi{
+        margin:2vh 0;
+        font-size:30px;
+    }
+    .StudentEx{
+        margin: 2vh 0;
+        font-size:24px;
+    }
+    .TerakoyaTopix{
+        height:90vh;
+    }
     .TerakoyaTi{
+        margin:2vh 0;
         font-size:30px;
     }
     .TerakoyaEx{
+        margin: 2vh 0;
         font-size:24px;
     }
 	button.btn-border {
