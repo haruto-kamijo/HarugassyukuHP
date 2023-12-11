@@ -47,7 +47,7 @@ button.btn {
 	    position:absolute;
 	    top:10vh;
 	    left:0px;
-	    height:250vh;
+	    height:340vh;
 	    width:100vw;
 	    background-color: floralwhite;
     }
@@ -124,6 +124,10 @@ button.btn {
         text-decoration: underline;
     }
     .Terakoya{
+        font-family: mochiy-pop, sans-serif;
+	    font-style: normal;
+	    /*font-weight: 200;*/
+		color: black;
         position:absolute;
         top:60vh;
 		width:90vw;
@@ -153,6 +157,17 @@ button.btn {
         font-size:30px;
     }
     .TerakoyaEx{
+        margin: 2vh 0;
+        font-size:24px;
+    }
+    .GassyukuDetail{
+        height:90vh;
+    }
+    .GassyukuTi{
+        margin:2vh 0;
+        font-size:30px;
+    }
+    .GassyukuEx{
         margin: 2vh 0;
         font-size:24px;
     }

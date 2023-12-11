@@ -18,7 +18,7 @@ document.querySelectorAll('p[href^="#"]').forEach(anchor => {
 
     //取得した要素の位置を取得するために、getBoundingClientRect()を呼び出し、ページ上の位置を計算。
     //headerの高さを引いて、スクロール位置がヘッダーの下になるように調整します。
-    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight-10;
 
     // window.scrollTo()を呼び出して、スクロール位置を設定します。behaviorオプションをsmoothに設定することで、スムーズなスクロールを実現します。
     window.scrollTo({
