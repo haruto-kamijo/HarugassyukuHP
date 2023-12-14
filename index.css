@@ -108,6 +108,9 @@ html {
     text-align: center;
     margin: 12vh 0vh;
   }
+    .IntoButton{
+        text-decoration: underline;
+    }
   .IntoPage {
     position: absolute;
     top: 47vh;
