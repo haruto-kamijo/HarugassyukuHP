@@ -7,7 +7,8 @@
 	<script src="./HeightMax.js"></script>
 	<link rel="stylesheet" href="./reset.css">
 	<link rel="stylesheet" type="text/css" href="./header.css" />
-    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <link rel="stylesheet" type="text/css" href="./footer.css" />
+    <link rel="stylesheet" type="text/css" href="./forparent.css" />
     <title>harugassyuku</title>
 	<script>
 		(function(d) {
@@ -44,15 +45,51 @@
         </nav>
 	</header>
 	<main>
-	    <div class="MainImg">
+	    <div class="MainImg"></div>
 			<div class="TitleScale">  
 		       <h1 class="Title">
-				   <p>comming soon...</p>
+                　　<p class="Topix" href="#Detail">合宿要項</p>
+				   <p class="Topix" href="#Terakoya">てらこやって何やるところ？</p>
+                   <p class="Topix" href="#Explain">春合宿で何をするの？</p>
+                   <p class="Topix" href="">今後の更新をお待ちください</p>
+                   <p></p>
+                   <p></p>
 			   </h1>
 	        </div>
-			<button class="IntoForm btn btn-border" onClick="location.href='./wishform.html'">したいことを書く</button>
+            <div class="Terakoya">
+                <div class="ParentDetail" id="Detail">
+                    <h1 class="ParentTi">合宿要項</h1>
+                    <ul>
+                        <li class="ParentEx">開催日:2024年3月9日(土),10日(日)</li>
+                        <li class="ParentEx">受付:3月9日(土)9時00分<br>解散:3月10日(日)16時30分</li>
+                        <li class="ParentEx">集合場所:〒471-0034<br>愛知県豊田市小坂本町１丁目６−１６<br>新豊田駅西口ロータリー</li>
+                        <li class="ParentEx">対象:豊田市内の小学生1年生～6年生</li>
+                        <li class="ParentEx">募集人数:100名</li>
+                        <li class="ParentEx">参加費:5000円</li>
+                        <li class="ParentEx">服装:動きやすく汚れても良い服装、運動靴</li>
+                        <li class="ParentEx">持ち物:着替え一泊分、運動靴、防寒具、歯ブラシ、1日目の昼食のお弁当、水筒、筆記用具、タオル、寝間着、常備薬、保険証のコピー、雨具(レインコート)、汚れた服を入れる袋、体育館シューズ</li>
+                        <li class="ParentEx">事前説明会:2/4(日)13時00分~16時00分にZoom上でオンラインの事前説明会を行います。<br>また、2/24(土)と2/25(日)にオフラインでの事前説明会を行います。参加は必須ではございませんが質疑応答の時間なども用意いたしますので、ご都合の良い日程でお子さまと一緒にぜひご参加ください。ZoomのURLや詳細は、チラシ記載のHPにて随時更新させていただきますので日程が近くなりましたら確認をお願いいたします。</li>
+                        <li class="ParentEx">備考:写真をSNSや写真共有サイトを通じて共有させていただきたいので、撮影並びに掲載についてご了承ください。<br>またYoutubeもしくはZoomを通しての動画配信にて子どもたちの様子を共有させていただきたいので、動画撮影についてもご了承ください。</li>
+                        <li class="ParentEx">豊田市駅集合で、会場までは豊田市駅からバスが出ます。また、豊田市駅解散で、会場から豊田市駅までのバスが出ます。</li>
+                    </ul>
+                </div>
+                <div class="TerakoyaTopix" id="Terakoya">
+                    <h1 class="TerakoyaTi">てらこやの活動紹介</h1>
+                    <p class="TerakoyaEx">てらこやは子どもと遊ぶイベントを企画・運営する組織です！</p>
+                </div>
+                <div class="GassyukuDetail" id="Explain">
+                    <h1 class="GassyukuTi">春合宿の概要</h1>
+                    <ul>
+                        <li class="GassyukuEx">1日目:シャボン玉を使った実験と自由時間</li>
+                        <li class="GassyukuEx">2日目:逃走中</li>
+                    </ul>
+                </div>	
 		</div>
 	</main>
+    <footer>
+        <button class="IntoForm btn--yellow btn--circle" onClick="location.href='https://forms.gle/emzmcr9qJZNtrBJYA'" target="_blank" rel="noopener noreferrer">応募する！</button>
+    </footer>
 	<script type="text/javascript" src="./Hamburger.js"></script>
+      <script type="text/javascript" src="./Scroll.js"></script>
   </body>
 </html>

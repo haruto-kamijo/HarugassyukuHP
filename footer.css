@@ -1,0 +1,7 @@
+footer{
+    position: fixed;
+    top:90vh;
+    left:75vw;;
+    width:20vw;
+    z-index: 6;
+}
