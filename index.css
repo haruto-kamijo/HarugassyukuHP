@@ -1,66 +1,58 @@
 /* CSS Document */
-main{
-	font-family: vdl-logomarujr-pop-futoline, sans-serif;
-	font-style: normal;
-	font-weight: 400;
+main {
+  font-family: vdl-logomarujr-pop-futoline, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
-*,
-*:before,
-*:after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
-
 html {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font-size: 62.5%;/*rem算出をしやすくするために*/
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%; /*rem算出をしやすくするために*/
 }
-
-.btn,
-a.btn,
-button.btn {
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 1.5;
-    position: relative;
-    display: inline-block;
-    padding: 1rem 4rem;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
-    letter-spacing: 0.1em;
-    color: #212529;
-    border-radius: 0.5rem;
+.btn, a.btn, button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
 }
-
-
-@media screen and (max-width:1024px){
-    main{
-	    position:absolute;
-	    top:10vh;
-	    left:0px;
-	    height:90vh;
-	    width:100vw;
-	    background-color: floralwhite;
-    }
-	.MainImg{
-		position:absolute;
-		width:100vw;
-		height:90vh;
-		background:url("human.png") center no-repeat fixed;
-		background-color: rgba(255,255,255,0.6);
-		background-blend-mode: lighten;
-		background-size:150vh;
-	}
-	/*
+@media screen and (max-width:1024px) {
+  main {
+    position: absolute;
+    top: 10vh;
+    left: 0px;
+    height: 90vh;
+    width: 100vw;
+    background-color: floralwhite;
+  }
+  .MainImg {
+    position: absolute;
+    width: 100vw;
+    height: 90vh;
+    background: url("human.png") center no-repeat fixed;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+    background-size: 150vh;
+  }
+  /*
 	.marquee {
         display: flex;
         white-space: nowrap;
@@ -100,39 +92,62 @@ button.btn {
 		100%{translate:0;}
 		0%{translate:calc(-100% - 1rem);}
 	}*/
-	
-	.TitleScale{
-		position: absolute;
-		top:15vh;
-		left:20vw;
-		width:60vw;
-		height:30vh;
-		z-index:2;
-		background-color: floralwhite;
-		box-shadow: 0 0 0 4px khaki;
-		box-sizing: border-box;
-	}
-    .Title{
-		font-size:30px;
-		text-align: center;
-        margin:12vh 0vh;
-	}
-	.IntoForm{
-		position: absolute;
-		top:55vh;
-		text-align: center;
-		width:60vw;
-		margin:0 20vw 5vh;
-	}
-	
-	button.btn-border {
-        border: 1px solid #000;
-        border-radius: 0;
-        background: floralwhite;
-    }
-    button.btn-border:hover {
-        color: #fff;
-        background: #000;
-    }
-	
+  .TitleScale {
+    position: absolute;
+    top: 15vh;
+    left: 20vw;
+    width: 60vw;
+    height: 30vh;
+    z-index: 2;
+    background-color: floralwhite;
+    box-shadow: 0 0 0 4px khaki;
+    box-sizing: border-box;
+  }
+  .Title {
+    font-size: 30px;
+    text-align: center;
+    margin: 12vh 0vh;
+  }
+  .IntoPage {
+    position: absolute;
+    top: 55vh;
+    text-align: center;
+    width: 60vw;
+    margin: 0 20vw 5vh;
+  }
+  .IntoForm {
+    font-family: mochiy-pop, sans-serif;
+    font-style: normal;
+    position: fixed;
+    text-align: center;
+    bottom: 3vh;
+    right: 3vw;
+    width: 20vw;
+    padding: 5vh 10vw 5vh;
+    background-color: #FCD953;
+  }
+  button.btn--circle {
+    border-radius: 50%;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    -webkit-box-shadow: 0 5px 0 #e6d900;
+    box-shadow: 0 5px 0 #e6d900;
+  }
+  button.btn--circle:hover {
+    -webkit-transform: translate(0, 3px);
+    transform: translate(0, 3px);
+    -webkit-box-shadow: 0 2px 0 #e6d900;
+    box-shadow: 0 2px 0 #e6d900;
+  }
+  button.btn-border {
+    border: 1px solid #000;
+    border-radius: 0;
+    background: floralwhite;
+  }
+  button.btn-border:hover {
+    color: #fff;
+    background: #000;
+  }
 }
