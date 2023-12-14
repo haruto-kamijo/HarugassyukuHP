@@ -39,7 +39,7 @@ html {
     position: absolute;
     top: 10vh;
     left: 0px;
-    height: 420vh;
+    height: 490vh;
     width: 100vw;
     background-color: floralwhite;
   }
@@ -130,7 +130,7 @@ html {
     box-sizing: border-box;
   }
   .ParentDetail {
-    height: 130vh;
+    height: 200vh;
   }
   .ParentTi {
     margin: 2vh 0;

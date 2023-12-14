@@ -1,0 +1,243 @@
+/* CSS Document */
+main{
+	font-family: vdl-logomarujr-pop-futoline, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;/*rem算出をしやすくするために*/
+}
+
+.btn,
+a.btn,
+button.btn {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
+}
+
+
+@media screen and (max-width:1024px){
+    main{
+	    position:absolute;
+	    top:10vh;
+	    left:0px;
+	    height:840vh;
+	    width:100vw;
+	    background-color: floralwhite;
+    }
+	.MainImg{
+		position:relative;
+		width:100vw;
+		height:90vh;
+		background:url("human.png") center no-repeat fixed;
+		background-color: rgba(255,255,255,0.6);
+		background-blend-mode: lighten;
+		background-size:150vh;
+	}
+    .RubySize{
+        font-size:8px;
+    }
+	/*
+	.marquee {
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+        gap: 1rem;
+        font-size: 2rem;
+		z-index:1;
+    }
+	.marquee_r {
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+        gap: 1rem;
+        font-size: 2rem;
+		z-index:1;
+    }
+    .marquee-inner1 {
+        animation: marquee 30s linear infinite;
+	}
+	.marquee-inner2 {
+        animation: marquee_r 30s linear infinite;
+	}
+	.marquee-inner3 {
+        animation: marquee 30s linear infinite;
+	}
+	.marquee-inner4 {
+        animation: marquee_r 30s linear infinite;
+	}
+	.marquee-inner5 {
+        animation: marquee 30s linear infinite;
+	}
+	@keyframes marquee {
+		0%{translate:0;}
+		100%{translate:calc(-100% - 1rem);}
+	}
+	@keyframes marquee_r {
+		100%{translate:0;}
+		0%{translate:calc(-100% - 1rem);}
+	}*/
+	
+	.TitleScale{
+		position: absolute;
+        top:25vh;
+        left:10vw;
+		width:80vw;
+		height:40vh;
+		z-index:2;
+		background-color:floralwhite;
+        border: 1px solid #fbd26b;
+		/*box-shadow: 0 0 0 4px khaki;*/
+		box-sizing: border-box;
+	}
+    .Title{
+		font-size:23px;
+		text-align: center;
+        margin:4vh 0vh;
+	}
+    .Topix{
+        position: relative;
+        margin:2vh 0;
+        text-decoration: underline;
+    }
+    .Terakoya{
+        font-family: mochiy-pop, sans-serif;
+	    font-style: normal;
+	    /*font-weight: 200;*/
+		color: black;
+        position:absolute;
+        top:100vh;
+		width:90vw;
+		height:180vh;
+        margin: 0vh 5vw;
+		z-index:2;
+		background-color:floralwhite;
+		/*box-shadow: 0 0 0 4px khaki;*/
+		box-sizing: border-box;
+    }
+    .PlanDetail{
+        height:90vh;
+    }
+    .PlanTi{
+        margin:2vh 0;
+        font-size:30px;
+    }
+    .PlanEx{
+        margin: 2vh 0;
+        font-size:24px;
+        text-decoration: underline;
+    }
+    .TrainTopix{
+        height:90vh;
+    }
+    .TrainTi{
+        margin:2vh 0;
+        font-size:30px;
+    }
+    .TrainEx{
+        margin: 2vh 0;
+        font-size:24px;
+    }
+    .TakenokoTopix{
+        height:90vh;
+    }
+    .TakenokoTi{
+        margin:2vh 0;
+        font-size:30px;
+    }
+    .TakenokoEx{
+        margin: 2vh 0;
+        font-size:24px;
+    }
+    .ReverseTopix{
+        height:90vh;
+    }
+    .ReverseTi{
+        margin:2vh 0;
+        font-size:30px;
+    }
+    .ReverseEx{
+        margin: 2vh 0;
+        font-size:24px;
+    }
+    .OnedayTopix{
+        height:90vh;
+    }
+    .OnedayTi{
+        margin:2vh 0;
+        font-size:30px;
+    }
+    .OnedayEx{
+        margin: 2vh 0;
+        font-size:24px;
+    }
+    .BubbleTopix{
+        height:90vh;
+    }
+    .BubbleTi{
+        margin:2vh 0;
+        font-size:30px;
+    }
+    .BubbleEx{
+        margin: 2vh 0;
+        font-size:24px;
+    }
+    .FreetimeTopix{
+        height:90vh;
+    }
+    .FreetimeTi{
+        margin:2vh 0;
+        font-size:30px;
+    }
+    .FreetimeEx{
+        margin: 2vh 0;
+        font-size:24px;
+    }
+    .RungameTopix{
+        height:90vh;
+    }
+    .RungameTi{
+        margin:2vh 0;
+        font-size:30px;
+    }
+    .RungameEx{
+        margin: 2vh 0;
+        font-size:24px;
+    }
+	button.btn-border {
+        border: 1px solid #000;
+        border-radius: 0;
+        background: floralwhite;
+    }
+    button.btn-border:hover {
+        color: #fff;
+        background: #000;
+    }
+	
+}
