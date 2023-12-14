@@ -110,10 +110,10 @@ html {
   }
   .IntoPage {
     position: absolute;
-    top: 55vh;
+    top: 47vh;
     text-align: center;
     width: 60vw;
-    margin: 0 20vw 5vh;
+    margin: 0 20vw 3vh;
   }
   .IntoForm {
     font-family: mochiy-pop, sans-serif;
