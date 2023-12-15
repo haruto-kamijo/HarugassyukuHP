@@ -1,66 +1,58 @@
 /* CSS Document */
-main{
-	font-family: vdl-logomarujr-pop-futoline, sans-serif;
-	font-style: normal;
-	font-weight: 400;
+main {
+  font-family: vdl-logomarujr-pop-futoline, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
-*,
-*:before,
-*:after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
-
 html {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font-size: 62.5%;/*rem算出をしやすくするために*/
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%; /*rem算出をしやすくするために*/
 }
-
-.btn,
-a.btn,
-button.btn {
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 1.5;
+.btn, a.btn, button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+@media screen and (max-width:1024px) {
+  main {
+    position: absolute;
+    top: 10vh;
+    left: 0px;
+    height: 400vh;
+    width: 100vw;
+    background-color: floralwhite;
+  }
+  .MainImg {
     position: relative;
-    display: inline-block;
-    padding: 1rem 4rem;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
-    letter-spacing: 0.1em;
-    color: #212529;
-    border-radius: 0.5rem;
-}
-
-
-@media screen and (max-width:1024px){
-    main{
-	    position:absolute;
-	    top:10vh;
-	    left:0px;
-	    height:400vh;
-	    width:100vw;
-	    background-color: floralwhite;
-    }
-	.MainImg{
-		position:relative;
-		width:100vw;
-		height:90vh;
-		background:url("human.png") center no-repeat fixed;
-		background-color: rgba(255,255,255,0.6);
-		background-blend-mode: lighten;
-		background-size:150vh;
-	}
-	/*
+    width: 100vw;
+    height: 90vh;
+    background: url("human.png") center no-repeat fixed;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+    background-size: 150vh;
+  }
+  /*
 	.marquee {
         display: flex;
         white-space: nowrap;
@@ -100,85 +92,110 @@ button.btn {
 		100%{translate:0;}
 		0%{translate:calc(-100% - 1rem);}
 	}*/
-	
-	.TitleScale{
-		position: absolute;
-        top:25vh;
-        left:10vw;
-		width:80vw;
-		height:40vh;
-		z-index:2;
-		background-color:floralwhite;
-        border: 1px solid #fbd26b;
-		/*box-shadow: 0 0 0 4px khaki;*/
-		box-sizing: border-box;
-	}
-    .Title{
-		font-size:23px;
-		text-align: center;
-        margin:4vh 0vh;
-	}
-    .Topix{
-        position: relative;
-        margin:2vh 0;
-        text-decoration: underline;
-    }
-    .Terakoya{
-        font-family: mochiy-pop, sans-serif;
-	    font-style: normal;
-	    /*font-weight: 200;*/
-		color: black;
-        position:absolute;
-        top:100vh;
-		width:90vw;
-		height:180vh;
-        margin: 0vh 5vw;
-		z-index:2;
-		background-color:floralwhite;
-		/*box-shadow: 0 0 0 4px khaki;*/
-		box-sizing: border-box;
-    }
-    .StudentDetail{
-        height:90vh;
-    }
-    .StudentTi{
-        margin:2vh 0;
-        font-size:30px;
-    }
-    .StudentEx{
-        margin: 2vh 0;
-        font-size:24px;
-    }
-    .TerakoyaTopix{
-        height:90vh;
-    }
-    .TerakoyaTi{
-        margin:2vh 0;
-        font-size:30px;
-    }
-    .TerakoyaEx{
-        margin: 2vh 0;
-        font-size:24px;
-    }
-    .GassyukuDetail{
-        height:90vh;
-    }
-    .GassyukuTi{
-        margin:2vh 0;
-        font-size:30px;
-    }
-    .GassyukuEx{
-        margin: 2vh 0;
-        font-size:24px;
-    }
-	button.btn-border {
-        border: 1px solid #000;
-        border-radius: 0;
-        background: floralwhite;
-    }
-    button.btn-border:hover {
-        color: #fff;
-        background: #000;
-    }
-	
+  .TitleScale {
+    position: absolute;
+    top: 25vh;
+    left: 10vw;
+    width: 80vw;
+    height: 40vh;
+    z-index: 2;
+    background-color: floralwhite;
+    border: 1px solid #fbd26b;
+    /*box-shadow: 0 0 0 4px khaki;*/
+    box-sizing: border-box;
+  }
+  .Title {
+    font-size: 23px;
+    text-align: center;
+    margin: 4vh 0vh;
+  }
+  .Topix {
+    position: relative;
+    margin: 2vh 0;
+    text-decoration: underline;
+  }
+  .Terakoya {
+    font-family: mochiy-pop, sans-serif;
+    font-style: normal;
+    /*font-weight: 200;*/
+    color: black;
+    position: absolute;
+    top: 100vh;
+    width: 90vw;
+    height: 180vh;
+    margin: 0vh 5vw;
+    z-index:2;
+    background-color: floralwhite;
+    /*box-shadow: 0 0 0 4px khaki;*/
+    box-sizing: border-box;
+  }
+  .StudentDetail {
+    height: 90vh;
+  }
+  .StudentTi {
+    margin: 2vh 0;
+    font-size: 30px;
+  }
+  .StudentEx {
+    margin: 2vh 0;
+    font-size: 24px;
+  }
+  .TerakoyaTopix {
+    height: 90vh;
+  }
+  .TerakoyaTi {
+    margin: 2vh 0;
+    font-size: 30px;
+  }
+  .TerakoyaEx {
+    margin: 2vh 0;
+    font-size: 24px;
+  }
+  .GassyukuDetail {
+    height: 90vh;
+  }
+  .GassyukuTi {
+    margin: 2vh 0;
+    font-size: 30px;
+  }
+  .GassyukuEx {
+    margin: 2vh 0;
+    font-size: 24px;
+  }
+  .IntoForm {
+    font-family: mochiy-pop, sans-serif;
+    font-style: normal;
+    position: fixed;
+    text-align: center;
+    bottom: 3vh;
+    right: 3vw;
+    width: 20vw;
+    padding: 5vh 10vw 5vh;
+    background-color: #f4b4cc;
+    z-index:6;
+  }
+  button.btn--circle {
+    border-radius: 50%;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    -webkit-box-shadow: 0 5px 0 #f09199;
+    box-shadow: 0 5px 0 #f09199;
+  }
+  button.btn--circle:hover {
+    -webkit-transform: translate(0, 3px);
+    transform: translate(0, 3px);
+    -webkit-box-shadow: 0 2px 0 #f09199;
+    box-shadow: 0 2px 0 #f09199;
+  }
+  button.btn-border {
+    border: 1px solid #000;
+    border-radius: 0;
+    background: floralwhite;
+  }
+  button.btn-border:hover {
+    color: #fff;
+    background: #000;
+  }
 }
