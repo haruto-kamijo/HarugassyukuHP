@@ -115,9 +115,9 @@ html {
     text-decoration: underline;
   }
   .Terakoya {
-    font-family: mochiy-pop, sans-serif;
+    font-family: a-otf-ud-shin-go-pr6n, sans-serif;
     font-style: normal;
-    /*font-weight: 200;*/
+    font-weight: 300;
     color: black;
     position: absolute;
     top: 100vh;

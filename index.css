@@ -119,8 +119,9 @@ html {
     margin: 0 20vw 3vh;
   }
   .IntoForm {
-    font-family: mochiy-pop, sans-serif;
+    font-family: a-otf-ud-shin-go-pr6n, sans-serif;
     font-style: normal;
+    font-weight: 300;
     position: fixed;
     text-align: center;
     bottom: 3vh;
