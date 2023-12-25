@@ -94,7 +94,7 @@ html {
 	}*/
   .TitleScale {
     position: absolute;
-    top: 15vh;
+    top: 7vh;
     left: 20vw;
     width: 60vw;
     height: 30vh;
@@ -113,7 +113,7 @@ html {
     }
   .IntoPage {
     position: absolute;
-    top: 47vh;
+    top: 40vh;
     text-align: center;
     width: 60vw;
     margin: 0 20vw 3vh;
