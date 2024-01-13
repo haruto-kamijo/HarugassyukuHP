@@ -1,0 +1,153 @@
+/* CSS Document */
+main {
+  font-family: vdl-logomarujr-pop-futoline, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%; /*rem算出をしやすくするために*/
+}
+.btn, a.btn, button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+@media screen and (max-width:1024px) {
+  main {
+    position: absolute;
+    top: 10vh;
+    left: 0px;
+    height: 420vh;
+    width: 100vw;
+    background-color: floralwhite;
+  }
+  .MainImg {
+    position: absolute;
+    width: 100vw;
+    height: 30vh;
+    background: url("human.png") center no-repeat fixed;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+    background-size: 150vh;
+  }
+  /*
+	.marquee {
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+        gap: 1rem;
+        font-size: 2rem;
+		z-index:1;
+    }
+	.marquee_r {
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+        gap: 1rem;
+        font-size: 2rem;
+		z-index:1;
+    }
+    .marquee-inner1 {
+        animation: marquee 30s linear infinite;
+	}
+	.marquee-inner2 {
+        animation: marquee_r 30s linear infinite;
+	}
+	.marquee-inner3 {
+        animation: marquee 30s linear infinite;
+	}
+	.marquee-inner4 {
+        animation: marquee_r 30s linear infinite;
+	}
+	.marquee-inner5 {
+        animation: marquee 30s linear infinite;
+	}
+	@keyframes marquee {
+		0%{translate:0;}
+		100%{translate:calc(-100% - 1rem);}
+	}
+	@keyframes marquee_r {
+		100%{translate:0;}
+		0%{translate:calc(-100% - 1rem);}
+	}*/
+  .TitleScale {
+    position:relative;
+    top: 7vh;
+    left: 20vw;
+    width: 60vw;
+    height: 10vh;
+    z-index: 2;
+    background-color: floralwhite;
+    box-shadow: 0 0 0 4px khaki;
+    box-sizing: border-box;
+  }
+  .Title {
+	position: absolute;
+	font-family: a-otf-ud-shin-go-pr6n, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    text-align: center;
+    margin: 3vh 8vw;
+  }
+  .ExText {
+	position:relative;
+	top:20vh;
+	font-family: a-otf-ud-shin-go-pr6n, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    margin: 12vh 0vh;
+  }
+  .Table{
+	    margin:20vh 0;	   
+		width:90vw;
+	 }
+  button.btn--circle {
+    border-radius: 50%;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    -webkit-box-shadow: 0 5px 0 #e6d900;
+    box-shadow: 0 5px 0 #e6d900;
+  }
+  button.btn--circle:hover {
+    -webkit-transform: translate(0, 3px);
+    transform: translate(0, 3px);
+    -webkit-box-shadow: 0 2px 0 #e6d900;
+    box-shadow: 0 2px 0 #e6d900;
+  }
+  button.btn-border {
+    border: 1px solid #000;
+    border-radius: 0;
+    background: floralwhite;
+  }
+  button.btn-border:hover {
+    color: #fff;
+    background: #000;
+  }
+}
