@@ -39,7 +39,7 @@ html {
     position: absolute;
     top: 10vh;
     left: 0px;
-    height: 90vh;
+    height:400vh;
     width: 100vw;
     background-color: floralwhite;
   }
@@ -149,12 +149,12 @@ html {
     margin: 12vh 0vh;
   }
 	
-    .IntoButton{
+   .IntoButton{
         text-decoration: underline;
     }
   .IntoPage {
     position: absolute;
-    top: 40vh;
+    top: 100vh;
     text-align: center;
     width: 60vw;
     margin: 0 20vw 3vh;
@@ -265,7 +265,7 @@ html {
 			z-index: 7;
 		}
 		100%{
-			top: 7vh;
+			top: 20vh;
 			left: 20vw;
 			width: 60vw;
 			height: 30vh;
