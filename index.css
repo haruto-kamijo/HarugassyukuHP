@@ -1,8 +1,8 @@
 /* CSS Document */
 main {
-  font-family: vdl-logomarujr-pop-futoline, sans-serif;
-  font-style: normal;
+  font-family: mochiy-pop-p, sans-serif;
   font-weight: 400;
+  font-style: normal;
 }
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -94,20 +94,61 @@ html {
 	}*/
   .TitleScale {
     position: absolute;
-    top: 7vh;
-    left: 20vw;
-    width: 60vw;
-    height: 30vh;
-    z-index: 2;
+    top: 0vh;
+    left: 0vw;
+    width: 100vw;
+    height: 100vh;
+    z-index: 7;
     background-color: floralwhite;
     box-shadow: 0 0 0 4px khaki;
     box-sizing: border-box;
+	animation-name: tosmall;
+	animation-duration: 1s;
+	animation-delay:4s;
+	animation-fill-mode: both;
+	
   }
+  .TitleHigh{
+		animation-duration: 1s;
+		animation-name:slideinhigh;
+		animation-fill-mode: both;
+	}
+	.TitleLow{
+		animation-delay: 2s;
+		animation-duration: 0.5s;
+		animation-name:slideinlow;
+		animation-fill-mode: both;
+	}
+	.ColorHigh{
+		animation-delay: 1s;
+		animation-duration: 1s;
+		animation-name:colorchangehigh;
+		animation-fill-mode: both;
+	}
+	.ColorLow{
+		animation-delay: 3s;
+		animation-duration: 1s;
+		animation-name:colorchangelow;
+		animation-fill-mode: both;
+	}
+	.AlphaHigh{
+		animation-delay: 1s;
+		animation-duration: 1s;
+		animation-name:alphachangehigh;
+		animation-fill-mode: both;
+	}
+	.AlphaLow{
+		animation-delay: 3s;
+		animation-duration: 1s;
+		animation-name:alphachangelow;
+		animation-fill-mode: both;
+	}
   .Title {
-    font-size: 30px;
-    text-align: center;
+    font-size: 30px;	
+	text-align: center;
     margin: 12vh 0vh;
   }
+	
     .IntoButton{
         text-decoration: underline;
     }
@@ -154,4 +195,81 @@ html {
     color: #fff;
     background: #000;
   }
+  @keyframes slideinhigh{
+		0%{
+			transform: translateX(0px);
+			width:100vw;
+		}
+		100%{
+			transform: translateX(0px);
+			width:100%;
+	  }
+	}
+	@keyframes slideinlow{
+		0%{
+			transform: translateX(0px);
+			width:100vw;
+			opacity:0;
+		}
+		100%{
+			transform: translateX(0px);
+			width:100%;
+			opacity:1;
+		}
+	  }
+	@keyframes colorchangehigh{
+		0%{
+			top:40vh;
+			left:25vw;
+			font-size:50px;
+		}
+		100%{
+			color:#f49d43;
+			font-size:30px;
+		}
+	  }
+	@keyframes colorchangelow{
+		0%{
+			top:50vh;
+			left:20vw;
+			font-size:60px;
+		}
+		100%{
+			color:#e0576f;
+			font-size:30px;
+		}
+		}
+	  @keyframes alphachangehigh{
+		0%{
+			opacity:0;
+		}
+		100%{
+			opacity:1;
+		}
+	  }
+	  @keyframes alphachangelow{
+		0%{
+			opacity:0;
+		}
+		100%{
+			opacity:1;
+		}
+	  }
+	
+	@keyframes tosmall{
+		0%{
+			top: 0vh;
+			left: 0vw;
+			width: 100vw;
+			height: 100vh;
+			z-index: 7;
+		}
+		100%{
+			top: 7vh;
+			left: 20vw;
+			width: 60vw;
+			height: 30vh;
+			z-index: 2;
+		}
+	}
 }
