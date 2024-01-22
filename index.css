@@ -94,53 +94,31 @@ html {
 	}*/
   .TitleScale {
     position: absolute;
-    top: 0vh;
+    top: 20vh;
     left: 0vw;
     width: 100vw;
-    height: 100vh;
-    z-index: 7;
+    height: 40vh;
+    z-index:2;
     background-color: floralwhite;
-    box-shadow: 0 0 0 4px khaki;
-    box-sizing: border-box;
+    /*box-shadow: 0 0 0 4px khaki;
+    box-sizing: border-box;*/
+	/*
 	animation-name: tosmall;
 	animation-duration: 1s;
 	animation-delay:4s;
-	animation-fill-mode: both;
-	
+	animation-fill-mode: both;*/
   }
-  .TitleHigh{
+	.TitleCover{
+		position: absolute;
+		background-color:floralwhite;
+		top:-20vh;
+		left:0vw;
+		width:100vw;
+		height:100vh;
+		z-index:4;
+		animation-name:fadeoutbg;
 		animation-duration: 1s;
-		animation-name:slideinhigh;
-		animation-fill-mode: both;
-	}
-	.TitleLow{
-		animation-delay: 2s;
-		animation-duration: 0.5s;
-		animation-name:slideinlow;
-		animation-fill-mode: both;
-	}
-	.ColorHigh{
-		animation-delay: 1s;
-		animation-duration: 1s;
-		animation-name:colorchangehigh;
-		animation-fill-mode: both;
-	}
-	.ColorLow{
-		animation-delay: 3s;
-		animation-duration: 1s;
-		animation-name:colorchangelow;
-		animation-fill-mode: both;
-	}
-	.AlphaHigh{
-		animation-delay: 1s;
-		animation-duration: 1s;
-		animation-name:alphachangehigh;
-		animation-fill-mode: both;
-	}
-	.AlphaLow{
-		animation-delay: 3s;
-		animation-duration: 1s;
-		animation-name:alphachangelow;
+		animation-delay:4.5s;
 		animation-fill-mode: both;
 	}
   .Title {
@@ -148,6 +126,64 @@ html {
 	text-align: center;
     margin: 12vh 0vh;
   }
+	.Hyaku{
+		position:absolute;
+		width:60vw;
+		top:-8vh;
+		left:20vw;
+		opacity:0;
+		z-index:2;
+		animation-delay:0.5s;
+		animation-duration: 2s;
+		animation-name:fadetitle;
+	}
+	.Sitai{
+		position:absolute;
+		width:60vw;
+		top:-8vh;
+		left:20vw;
+		opacity:0;
+		z-index:2;
+		animation-delay: 2.5s;
+		animation-duration: 2s;
+		animation-name:fadetitle;
+	}
+	.News{
+		position: absolute;
+		top:2vh;
+		left:2vh;
+		font-size:20px;
+	}
+	.NewsContext{
+		position: absolute;
+		top:6vh;
+		left:0vw;
+		width:100vw;
+		height:33vh;
+		background-color: white;
+		z-index:6;
+	}
+	.NewsDay{
+		position: relative;
+		font-size:14px;
+		float:left;
+		width:30vw;
+		margin:2vh 2vw;
+	}
+	.NewsDetail{
+		position: relative;
+		font-size:14px;
+		z-index:6;
+		width:96vw;
+		height:10vh;
+		margin:0 4vw 0 0vw;
+	}
+	.NewsText{
+		position: absolute;
+		top:2vh;
+		left:33vw;
+		width:60vw;
+	}
 	
    .IntoButton{
         text-decoration: underline;
@@ -270,6 +306,33 @@ html {
 			width: 60vw;
 			height: 30vh;
 			z-index: 2;
+		}
+	}
+	@keyframes fadetitle{
+		0%{
+			opacity:0;
+			z-index:7;
+		}
+		50%{
+			opacity:1;
+			z-index:7;
+		}
+		100%{
+			opacity:0;
+			z-index:7;
+		}
+	}
+	@keyframes fadeoutbg{
+		0%{
+			opacity:1;
+			z-index:7;
+		}
+		50%{
+			z-index:7;
+		}
+		100%{
+			opacity:0;
+			z-index:3;
 		}
 	}
 }

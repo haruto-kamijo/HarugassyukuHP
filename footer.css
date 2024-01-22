@@ -4,4 +4,17 @@ footer{
     left:75vw;;
     width:20vw;
     z-index: 6;
+	animation-delay:4.5s;
+	animation-duration: 1s;
+	animation-name:alphachange;
+	animation-fill-mode: both;
+	
+}
+@keyframes alphachange{
+		0%{
+			opacity:0;
+		}
+		100%{
+			opacity:1;
+		}
 }
