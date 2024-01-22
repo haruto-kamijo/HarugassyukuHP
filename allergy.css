@@ -108,7 +108,7 @@ html {
 	font-family: a-otf-ud-shin-go-pr6n, sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 28px;
+    font-size: 20px;
     text-align: center;
     margin: 3vh 8vw;
   }
@@ -118,12 +118,12 @@ html {
 	font-family: a-otf-ud-shin-go-pr6n, sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     margin: 12vh 0vh;
   }
   .Table{
-	    margin:20vh 0;	   
+	    margin:10vh 5vw;	   
 		width:90vw;
 	 }
   button.btn--circle {
