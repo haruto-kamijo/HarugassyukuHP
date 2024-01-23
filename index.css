@@ -39,7 +39,7 @@ html {
     position: absolute;
     top: 10vh;
     left: 0px;
-    height:400vh;
+    height:500vh;
     width: 100vw;
     background-color: floralwhite;
   }
@@ -162,6 +162,7 @@ html {
 		height:33vh;
 		background-color: white;
 		z-index:6;
+		overflow-y: scroll;
 	}
 	.NewsDay{
 		position: relative;
@@ -186,27 +187,170 @@ html {
 	}
 	
    .IntoButton{
+	    position:absolute;
         text-decoration: underline;
+	    font-size:16px;
+	    width:60vw;
+	    top:2vh;
+	    left:2vw;
     }
+  .Detail {
+    position: absolute;
+    top: 90vh;
+    width:100vw;
+	height:40vh;
+    margin: 0 0vw 3vh;
+  }
+	.DetailImg{
+		position: absolute;
+		width:100vw;
+		height:33vh;
+	}
+	.ImgSize{
+		width:95vw;
+		margin:2vh 0 0 2.5vw;
+		border-radius:20px;
+	}
+  .DetailMain {
+    position: absolute;
+    top: 32vh;
+	left:0vw;
+    width: 100vw;
+	height:65vh;
+  }
+  .Kids {
+    position: absolute;
+    top: 190vh;
+    width:100vw;
+	height:40vh;
+    margin: 0 0vw 3vh;
+  }
+	.KidsImg{
+		position: absolute;
+		width:100vw;
+		height:33vh;
+	}
+  .KidsMain {
+    position: absolute;
+    top: 32vh;
+	left:0vw;
+    width: 100vw;
+	height:65vh;
+  }
+  .Parent {
+    position: absolute;
+    top: 290vh;
+    width:100vw;
+	height:40vh;
+    margin: 0 0vw 3vh;
+  }
+	.ParentImg{
+		position: absolute;
+		width:100vw;
+		height:33vh;
+	}
+  .ParentMain {
+    position: absolute;
+    top: 32vh;
+	left:0vw;
+    width: 100vw;
+	height:65vh;
+  }
+  .Student {
+    position: absolute;
+    top: 390vh;
+    width:100vw;
+	height:40vh;
+    margin: 0 0vw 3vh;
+  }
+	.StudentImg{
+		position: absolute;
+		width:100vw;
+		height:33vh;
+	}
+  .StudentMain {
+    position: absolute;
+    top: 32vh;
+	left:0vw;
+    width: 100vw;
+	height:65vh;
+  }
+  .MainTitle {
+	font-family: mochiy-pop, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    position: absolute;
+    top: 0vh;
+	left:0vw;
+    width:100vw;
+	height:7vh;
+	font-size:14px;
+	padding:0 0 0 5vw;
+  }
+  .MainContent {
+	font-family: "uddigikyokasho-pro", sans-serif;
+	font-weight: 500;
+    font-style: normal;
+    position: absolute;
+    top: 7vh;
+	left:0vw;
+    width:100vw;
+	height:35vh;
+	font-size:16px;
+	padding:0 5vw 0 5vw;
+	line-height:1.7;
+  }
+  .arrow{
+  width: 10em;
+  position: relative;
+  display: inline-block;
+  color: #000;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 1em;
+  }
+  .arrow::after{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 4vw;
+  margin: auto;
+  content: "";
+  vertical-align: middle;
+  width: 1.0em;   /* arrow size */
+  height: 1.0em;  /* arrow size */
+  border-top: 2px solid #000;  /* thickness, color */
+  border-right: 2px solid #000;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+  .arrow:hover::after{
+	border-top: 2px solid #FFF;  /* thickness, color */
+    border-right: 2px solid #FFF;
+  }
   .IntoPage {
     position: absolute;
-    top: 100vh;
-    text-align: center;
-    width: 60vw;
-    margin: 0 20vw 3vh;
+	top:45vh;
+	left:0vw;
+    width:90vw;
+	height:10vh;
+    margin: 0 5vw 0vh 5vw;
   }
   .IntoForm {
     font-family: a-otf-ud-shin-go-pr6n, sans-serif;
     font-style: normal;
     font-weight: 300;
-    position: fixed;
+    position: absolute;
     text-align: center;
-    bottom: 3vh;
+    buttom: 0vh;
     right: 3vw;
     width: 20vw;
     padding: 5vh 10vw 5vh;
     background-color: #FCD953;
   }
+	.Scroll{
+		text-decoration: underline;
+	}
   button.btn--circle {
     border-radius: 50%;
     line-height: 100px;
@@ -224,7 +368,7 @@ html {
   }
   button.btn-border {
     border: 1px solid #000;
-    border-radius: 0;
+    border-radius:20px;
     background: floralwhite;
   }
   button.btn-border:hover {
