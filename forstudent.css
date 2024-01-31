@@ -105,9 +105,9 @@ html {
     box-sizing: border-box;
   }
   .Title {
-    font-size: 23px;
+    font-size: 20px;
     text-align: center;
-    margin: 4vh 0vh;
+    margin: 2vh 0vh;
   }
   .Topix {
     position: relative;
@@ -134,33 +134,33 @@ html {
   }
   .StudentTi {
     margin: 2vh 0;
-    font-size: 30px;
+    font-size: 20px;
   }
   .StudentEx {
     margin: 2vh 0;
-    font-size: 24px;
+    font-size: 16px;
   }
   .TerakoyaTopix {
     height: 90vh;
   }
   .TerakoyaTi {
     margin: 2vh 0;
-    font-size: 30px;
+    font-size: 20px;
   }
   .TerakoyaEx {
     margin: 2vh 0;
-    font-size: 24px;
+    font-size: 16px;
   }
   .GassyukuDetail {
     height: 90vh;
   }
   .GassyukuTi {
     margin: 2vh 0;
-    font-size: 30px;
+    font-size: 20px;
   }
   .GassyukuEx {
     margin: 2vh 0;
-    font-size: 24px;
+    font-size: 16px;
   }
   .IntoForm {
     font-family: mochiy-pop, sans-serif;
@@ -171,7 +171,7 @@ html {
     right: 3vw;
     width: 20vw;
     padding: 5vh 10vw 5vh;
-    background-color: #f4b4cc;
+    background-color: #c1e4e9;
     z-index:6;
   }
   button.btn--circle {
@@ -180,14 +180,14 @@ html {
     width: 100px;
     height: 100px;
     padding: 0;
-    -webkit-box-shadow: 0 5px 0 #f09199;
-    box-shadow: 0 5px 0 #f09199;
+    -webkit-box-shadow: 0 5px 0 #a9c7cc;
+    box-shadow: 0 5px 0 #a9c7cc;
   }
   button.btn--circle:hover {
     -webkit-transform: translate(0, 3px);
     transform: translate(0, 3px);
-    -webkit-box-shadow: 0 2px 0 #f09199;
-    box-shadow: 0 2px 0 #f09199;
+    -webkit-box-shadow: 0 2px 0 #a9c7cc;
+    box-shadow: 0 2px 0 #a9c7cc;
   }
   button.btn-border {
     border: 1px solid #000;
