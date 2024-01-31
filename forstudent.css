@@ -165,7 +165,7 @@ html {
   .IntoForm {
     font-family: mochiy-pop, sans-serif;
     font-style: normal;
-    position: fixed;
+    position: absolute;
     text-align: center;
     bottom: 3vh;
     right: 3vw;
