@@ -148,11 +148,11 @@ button.btn {
     }
     .PlanTi{
         margin:2vh 0;
-        font-size:30px;
+        font-size:20px;
     }
     .PlanEx{
         margin: 2vh 0;
-        font-size:24px;
+        font-size:16px;
         text-decoration: underline;
     }
     .TrainTopix{
@@ -160,77 +160,77 @@ button.btn {
     }
     .TrainTi{
         margin:2vh 0;
-        font-size:30px;
+        font-size:20px;
     }
     .TrainEx{
         margin: 2vh 0;
-        font-size:24px;
+        font-size:16px;
     }
     .TakenokoTopix{
         height:90vh;
     }
     .TakenokoTi{
         margin:2vh 0;
-        font-size:30px;
+        font-size:20px;
     }
     .TakenokoEx{
         margin: 2vh 0;
-        font-size:24px;
+        font-size:16px;
     }
     .ReverseTopix{
         height:90vh;
     }
     .ReverseTi{
         margin:2vh 0;
-        font-size:30px;
+        font-size:20px;
     }
     .ReverseEx{
         margin: 2vh 0;
-        font-size:24px;
+        font-size:16px;
     }
     .OnedayTopix{
         height:90vh;
     }
     .OnedayTi{
         margin:2vh 0;
-        font-size:30px;
+        font-size:20px;
     }
     .OnedayEx{
         margin: 2vh 0;
-        font-size:24px;
+        font-size:16px;
     }
     .BubbleTopix{
         height:90vh;
     }
     .BubbleTi{
         margin:2vh 0;
-        font-size:30px;
+        font-size:20px;
     }
     .BubbleEx{
         margin: 2vh 0;
-        font-size:24px;
+        font-size:16px;
     }
     .FreetimeTopix{
         height:90vh;
     }
     .FreetimeTi{
         margin:2vh 0;
-        font-size:30px;
+        font-size:20px;
     }
     .FreetimeEx{
         margin: 2vh 0;
-        font-size:24px;
+        font-size:16px;
     }
     .RungameTopix{
         height:90vh;
     }
     .RungameTi{
         margin:2vh 0;
-        font-size:30px;
+        font-size:20px;
     }
     .RungameEx{
         margin: 2vh 0;
-        font-size:24px;
+        font-size:16px;
     }
 	button.btn-border {
         border: 1px solid #000;
