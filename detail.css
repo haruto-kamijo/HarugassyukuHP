@@ -105,9 +105,9 @@ html {
     box-sizing: border-box;
   }
   .Title {
-    font-size: 23px;
+    font-size: 20px;
     text-align: center;
-    margin: 4vh 0vh;
+    margin: 2vh 0vh;
   }
   .Topix {
     position: relative;
@@ -134,33 +134,33 @@ html {
   }
   .GassyukuTi {
     margin: 2vh 0;
-    font-size: 30px;
+    font-size: 20px;
   }
   .GassyukuEx {
     margin: 2vh 0;
-    font-size: 24px;
+    font-size: 16px;
   }
   .FirstdayTopix {
     height: 90vh;
   }
   .FirstdayTi {
     margin: 2vh 0;
-    font-size: 30px;
+    font-size: 20px;
   }
   .FirstdayEx {
     margin: 2vh 0;
-    font-size: 24px;
+    font-size: 16px;
   }
   .LastdayDetail {
     height: 90vh;
   }
   .LastdayTi {
     margin: 2vh 0;
-    font-size: 30px;
+    font-size: 20px;
   }
   .LastdayEx {
     margin: 2vh 0;
-    font-size: 24px;
+    font-size: 16px;
   }
   .IntoForm {
     font-family: mochiy-pop, sans-serif;
