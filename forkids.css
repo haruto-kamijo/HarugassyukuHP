@@ -117,7 +117,7 @@ button.btn {
 		box-sizing: border-box;
 	}
     .Title{
-		font-size:23px;
+		font-size:20px;
 		text-align: center;
         margin:4vh 0vh;
 	}
@@ -127,9 +127,9 @@ button.btn {
         text-decoration: underline;
     }
     .Terakoya{
-        font-family: a-otf-ud-shin-go-pr6n, sans-serif;
-        font-style: normal;
-        font-weight: 300;
+        font-family: "uddigikyokasho-pro", sans-serif;
+		font-weight: 500;
+		font-style: normal;
 		color: black;
         position:absolute;
         top:100vh;
@@ -140,6 +140,8 @@ button.btn {
 		background-color:floralwhite;
 		/*box-shadow: 0 0 0 4px khaki;*/
 		box-sizing: border-box;
+		font-size:16px;
+		line-height:1.7;
     }
     .PlanDetail{
         height:90vh;

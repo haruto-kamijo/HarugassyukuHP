@@ -39,7 +39,7 @@ html {
     position: absolute;
     top: 10vh;
     left: 0px;
-    height: 490vh;
+    height: 580vh;
     width: 100vw;
     background-color: floralwhite;
   }
@@ -94,7 +94,7 @@ html {
 	}*/
   .TitleScale {
     position: absolute;
-    top: 25vh;
+    top: 15vh;
     left: 10vw;
     width: 80vw;
     height: 40vh;
@@ -105,9 +105,9 @@ html {
     box-sizing: border-box;
   }
   .Title {
-    font-size: 23px;
+    font-size: 16px;
     text-align: center;
-    margin: 4vh 0vh;
+    margin: 2vh 0vh;
   }
   .Topix {
     position: relative;
@@ -134,33 +134,44 @@ html {
   }
   .ParentTi {
     margin: 2vh 0;
-    font-size: 30px;
+    font-size: 20px;
   }
   .ParentEx {
     margin: 2vh 0;
-    font-size: 24px;
+    font-size: 16px;
   }
   .TerakoyaTopix {
     height: 90vh;
   }
   .TerakoyaTi {
     margin: 2vh 0;
-    font-size: 30px;
+    font-size: 20px;
   }
   .TerakoyaEx {
     margin: 2vh 0;
-    font-size: 24px;
+    font-size: 16px;
   }
   .GassyukuDetail {
     height: 90vh;
   }
   .GassyukuTi {
     margin: 2vh 0;
-    font-size: 30px;
+    font-size: 20px;
   }
   .GassyukuEx {
     margin: 2vh 0;
-    font-size: 24px;
+    font-size: 16px;
+  }
+  .ZoomDetail {
+    height: 90vh;
+  }
+  .ZoomTi {
+    margin: 2vh 0;
+    font-size: 20px;
+  }
+  .ZoomEx {
+    margin: 2vh 0;
+    font-size: 16px;
   }
   .IntoForm {
     font-family: mochiy-pop, sans-serif;

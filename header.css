@@ -5,6 +5,8 @@ header{
 	font-weight: 400;
 	color:#fffff9;
 }
+
+@media screen and (max-width:1024px){
 header{
 	    position:fixed;
 		font-size: 15px;
@@ -16,7 +18,6 @@ header{
 		border-bottom: solid floralwhite;
         z-index: 7;
 }
-
 .OurName{
 	position: absolute;
 	top:3vh;
@@ -27,7 +28,7 @@ header{
 .NavMenuUl{
 	position: fixed;
 	width:100%;
-	font-size:30px;
+	font-size:24px;
 	top:15vh;
     left:5vw;
 	text-align:left;
@@ -163,4 +164,5 @@ header{
     border-color: #fffff9;
     transform: rotate(-680deg);
   }
+	}
 }
