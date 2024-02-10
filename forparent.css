@@ -1,8 +1,8 @@
 /* CSS Document */
 main {
-  font-family: vdl-logomarujr-pop-futoline, sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: "uddigikyokasho-pro", sans-serif;
+	font-weight: 500;
+    font-style: normal;
 }
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -33,6 +33,203 @@ html {
   letter-spacing: 0.1em;
   color: #212529;
   border-radius: 0.5rem;
+}
+@media screen and (min-width:1024px) and (max-width:1920px){
+  main {
+    position: absolute;
+    top: 10vh;
+    left: 0px;
+    height:500vh;
+    width: 100%;
+    background-color: floralwhite;
+  }
+  .MainImg {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background: url("human.png") center no-repeat fixed;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+    background-size:80%;
+	background-repeat: repeat;
+  }
+ 
+  .TitleScale {
+    position: absolute;
+    top: 20vh;
+    left: 0vw;
+    width: 100%;
+    height: 40vh;
+    z-index:2;
+    background-color: floralwhite;
+  }
+  .Title {
+	font-family: mochiy-pop, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    font-size: 24px;
+    text-align: center;
+    margin: 3vh 0vh;
+  }
+  .Topix {
+    position: relative;
+    margin: 2vh 0;
+    text-decoration: underline;
+  }
+   .IntoButton{
+	    position:absolute;
+        text-decoration: underline;
+	    text-align:center; 
+	    font-size:18px;
+	    width:80%;
+	    top:2vh;
+	    left:5vw;
+    }
+  .ParentDetail {
+    position: absolute;
+    top: 90vh;
+    width:100%;
+	height:100vh;
+    margin: 3vh 0vw 0vh 3vw;
+  }
+	.DetailImg{
+		position: absolute;
+		width:100%;
+		height:33vh;
+	}
+	.ImgSize{
+		height:33vh;
+		margin:2vh 0 0 2.5vw;
+		border-radius:20px;
+	}
+	.ParentTi {
+    margin: 2vh 0;
+    font-size: 20px;
+  }
+  .ParentEx {
+	font-family: "uddigikyokasho-pro", sans-serif;
+	font-weight: 500;
+    font-style: normal;
+    margin: 2vh 0;
+    font-size: 16px;
+  }
+  .TerakoyaTi {
+    margin: 2vh 2vw;
+    font-size: 20px;
+  }
+  .TerakoyaEx {
+    margin: 2vh 1vw;
+    font-size: 16px;
+  }
+  .GassyukuTi {
+    margin: 2vh 2vw;
+    font-size: 20px;
+  }
+  .GassyukuEx {
+    margin: 2vh 1vw;
+    font-size: 16px;
+  }
+  .ZoomTi {
+    margin: 2vh 2vw;
+    font-size: 20px;
+  }
+  .ZoomEx {
+    margin: 2vh 1vw;
+    font-size: 16px;
+  }
+  .TerakoyaTopix {
+    position: absolute;
+    top: 190vh;
+    width:100%;
+	height:50vh;
+    margin: 3vh 0vw 0vh 0vw;
+  }
+  .GassyukuDetail {
+    position: absolute;
+    top: 240vh;
+    width:100%;
+	height:100vh;
+    margin: 0 0vw 3vh;
+  }
+  .ZoomDetail {
+    position: absolute;
+    top: 300vh;
+    width:100%;
+	height:100vh;
+    margin: 0 0vw 3vh;
+  }
+  .MainTitle {
+	font-family: mochiy-pop, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    position: absolute;
+    top: 0vh;
+	left:0vw;
+    width:100%;
+	height:7vh;
+	font-size:24px;
+	padding:3vh 0 0 3vw;
+  }
+  .MainContent {
+	font-family: "uddigikyokasho-pro", sans-serif;
+	font-weight: 500;
+    font-style: normal;
+    position: absolute;
+    top: 9vh;
+	left:0vw;
+    width:100%;
+	height:35vh;
+	font-size:18px;
+	padding:0 5vw 0 5vw;
+	line-height:1.7;
+  }
+  .IntoPage {
+    position: absolute;
+	top:30vh;
+	left:0vw;
+    width:90%;
+	height:10vh;
+    margin: 0 5% 0vh 5%;
+  }
+  .IntoForm {
+    font-family: a-otf-ud-shin-go-pr6n, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    position: absolute;
+    text-align: center;
+    buttom: 0vh;
+    right: 3vw;
+    width: 20vw;
+    padding: 5% 10vw 5%;
+    background-color: #FCD953;
+  }
+	.Scroll{
+		text-decoration: underline;
+	}
+  button.btn--circle {
+    border-radius: 50%;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    -webkit-box-shadow: 0 5px 0 #e6d900;
+    box-shadow: 0 5px 0 #e6d900;
+  }
+  button.btn--circle:hover {
+    -webkit-transform: translate(0, 3px);
+    transform: translate(0, 3px);
+    -webkit-box-shadow: 0 2px 0 #e6d900;
+    box-shadow: 0 2px 0 #e6d900;
+  }
+  button.btn-border {
+    border: 1px solid #000;
+    border-radius:20px;
+    background: floralwhite;
+  }
+  button.btn-border:hover {
+    color: #fff;
+    background: #000;
+  }
 }
 @media screen and (max-width:1024px) {
   main {
