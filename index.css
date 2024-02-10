@@ -34,6 +34,454 @@ html {
   color: #212529;
   border-radius: 0.5rem;
 }
+@media screen and (min-width:1024px) and (max-width:1920px){
+  main {
+    position: absolute;
+    top: 10vh;
+    left: 0px;
+    height:500vh;
+    width: 100%;
+    background-color: floralwhite;
+  }
+  .MainImg {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background: url("human.png") center no-repeat fixed;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+    background-size:80%;
+	background-repeat: repeat;
+  }
+  /*
+	.marquee {
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+        gap: 1rem;
+        font-size: 2rem;
+		z-index:1;
+    }
+	.marquee_r {
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+        gap: 1rem;
+        font-size: 2rem;
+		z-index:1;
+    }
+    .marquee-inner1 {
+        animation: marquee 30s linear infinite;
+	}
+	.marquee-inner2 {
+        animation: marquee_r 30s linear infinite;
+	}
+	.marquee-inner3 {
+        animation: marquee 30s linear infinite;
+	}
+	.marquee-inner4 {
+        animation: marquee_r 30s linear infinite;
+	}
+	.marquee-inner5 {
+        animation: marquee 30s linear infinite;
+	}
+	@keyframes marquee {
+		0%{translate:0;}
+		100%{translate:calc(-100% - 1rem);}
+	}
+	@keyframes marquee_r {
+		100%{translate:0;}
+		0%{translate:calc(-100% - 1rem);}
+	}*/
+  .TitleScale {
+    position: absolute;
+    top: 20vh;
+    left: 0vw;
+    width: 100%;
+    height: 40vh;
+    z-index:2;
+    background-color: floralwhite;
+    /*box-shadow: 0 0 0 4px khaki;
+    box-sizing: border-box;*/
+	/*
+	animation-name: tosmall;
+	animation-duration: 1s;
+	animation-delay:4s;
+	animation-fill-mode: both;*/
+  }
+	.TitleCover{
+		position: absolute;
+		background-color:floralwhite;
+		top:-20vh;
+		left:0vw;
+		width:100%;
+		height:100vh;
+		z-index:4;
+		animation-name:fadeoutbg;
+		animation-duration: 1s;
+		animation-delay:4.5s;
+		animation-fill-mode: both;
+	}
+  .Title {
+    font-size: 30px;	
+	text-align: center;
+    margin: 12vh 0vh;
+  }
+	.Hyaku{
+		position:absolute;
+		width:40vw;
+		top:-20vh;
+		left:20vw;
+		opacity:0;
+		z-index:2;
+		animation-delay:0.5s;
+		animation-duration: 2s;
+		animation-name:fadetitle;
+	}
+	.Sitai{
+		position:absolute;
+		width:40vw;
+		top:-20vh;
+		left:20vw;
+		opacity:0;
+		z-index:2;
+		animation-delay: 2.5s;
+		animation-duration: 2s;
+		animation-name:fadetitle;
+	}
+	.News{
+		position: absolute;
+		top:2vh;
+		left:8vh;
+		font-size:20px;
+	}
+	.NewsContext{
+		position: absolute;
+		top:6vh;
+		left:5vw;
+		width:90%;
+		height:33vh;
+		background-color: white;
+		z-index:6;
+		overflow-y: scroll;
+	}
+	.NewsDay{
+		position: relative;
+		font-size:14px;
+		float:left;
+		width:30vw;
+		margin:2vh 2vw;
+	}
+	.NewsDetail{
+		position: relative;
+		font-size:14px;
+		z-index:6;
+		width:75vw;
+		height:10vh;
+		margin:0 4vw 0 0vw;
+	}
+	.NewsText{
+		position: absolute;
+		top:2vh;
+		left:33vw;
+		width:40vw;
+	}
+	
+   .IntoButton{
+	    position:absolute;
+        text-decoration: underline;
+	    text-align:center; 
+	    font-size:18px;
+	    width:80%;
+	    top:2vh;
+	    left:5vw;
+    }
+  .Detail {
+    position: absolute;
+    top: 90vh;
+    width:100%;
+	height:100vh;
+    margin: 0 0vw 3vh;
+  }
+	.DetailImg{
+		position: absolute;
+		width:100%;
+		height:33vh;
+	}
+	.ImgSize{
+		height:33vh;
+		margin:2vh 0 0 2.5vw;
+		border-radius:20px;
+	}
+  .DetailMain {
+    position: absolute;
+    top: 40vh;
+	left:0vw;
+    width: 100%;
+	height:55vh;
+  }
+  .Kids {
+    position: absolute;
+    top: 190vh;
+    width:100%;
+	height:100vh;
+    margin: 0 0vw 3vh;
+  }
+	.KidsImg{
+		position: absolute;
+		width:100%;
+		height:33vh;
+	}
+  .KidsMain {
+    position: absolute;
+    top: 40vh;
+	left:0vw;
+    width: 100%;
+	height:55vh;
+  }
+  .Parent {
+    position: absolute;
+    top: 290vh;
+    width:100%;
+	height:100vh;
+    margin: 0 0vw 3vh;
+  }
+	.ParentImg{
+		position: absolute;
+		width:100%;
+		height:33vh;
+	}
+  .ParentMain {
+    position: absolute;
+    top: 40vh;
+	left:0vw;
+    width: 100%;
+	height:55vh;
+  }
+  .Student {
+    position: absolute;
+    top: 390vh;
+    width:100%;
+	height:100vh;
+    margin: 0 0vw 3vh;
+  }
+	.StudentImg{
+		position: absolute;
+		width:100%;
+		height:33vh;
+	}
+  .StudentMain {
+    position: absolute;
+    top: 40vh;
+	left:0vw;
+    width: 100%;
+	height:55vh;
+  }
+  .MainTitle {
+	font-family: mochiy-pop, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    position: absolute;
+    top: 0vh;
+	left:0vw;
+    width:100%;
+	height:7vh;
+	font-size:24px;
+	padding:0 0 0 5vw;
+  }
+  .MainContent {
+	font-family: "uddigikyokasho-pro", sans-serif;
+	font-weight: 500;
+    font-style: normal;
+    position: absolute;
+    top: 9vh;
+	left:0vw;
+    width:100%;
+	height:35vh;
+	font-size:18px;
+	padding:0 5vw 0 5vw;
+	line-height:1.7;
+  }
+  .arrow{
+  width: 10em;
+  position: relative;
+  display: inline-block;
+  color: #000;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 1em;
+  }
+  .arrow::after{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 4vw;
+  margin: auto;
+  content: "";
+  vertical-align: middle;
+  width: 1.0em;   /* arrow size */
+  height: 1.0em;  /* arrow size */
+  border-top: 2px solid #000;  /* thickness, color */
+  border-right: 2px solid #000;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+  .arrow:hover::after{
+	border-top: 2px solid #FFF;  /* thickness, color */
+    border-right: 2px solid #FFF;
+  }
+  .IntoPage {
+    position: absolute;
+	top:30vh;
+	left:0vw;
+    width:90%;
+	height:10vh;
+    margin: 0 5% 0vh 5%;
+  }
+  .IntoForm {
+    font-family: a-otf-ud-shin-go-pr6n, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    position: absolute;
+    text-align: center;
+    buttom: 0vh;
+    right: 3vw;
+    width: 20vw;
+    padding: 5% 10vw 5%;
+    background-color: #FCD953;
+  }
+	.Scroll{
+		text-decoration: underline;
+	}
+  button.btn--circle {
+    border-radius: 50%;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    -webkit-box-shadow: 0 5px 0 #e6d900;
+    box-shadow: 0 5px 0 #e6d900;
+  }
+  button.btn--circle:hover {
+    -webkit-transform: translate(0, 3px);
+    transform: translate(0, 3px);
+    -webkit-box-shadow: 0 2px 0 #e6d900;
+    box-shadow: 0 2px 0 #e6d900;
+  }
+  button.btn-border {
+    border: 1px solid #000;
+    border-radius:20px;
+    background: floralwhite;
+  }
+  button.btn-border:hover {
+    color: #fff;
+    background: #000;
+  }
+  @keyframes slideinhigh{
+		0%{
+			transform: translateX(0px);
+			width:100vw;
+		}
+		100%{
+			transform: translateX(0px);
+			width:100%;
+	  }
+	}
+	@keyframes slideinlow{
+		0%{
+			transform: translateX(0px);
+			width:100vw;
+			opacity:0;
+		}
+		100%{
+			transform: translateX(0px);
+			width:100%;
+			opacity:1;
+		}
+	  }
+	@keyframes colorchangehigh{
+		0%{
+			top:40vh;
+			left:25vw;
+			font-size:50px;
+		}
+		100%{
+			color:#f49d43;
+			font-size:30px;
+		}
+	  }
+	@keyframes colorchangelow{
+		0%{
+			top:50vh;
+			left:20vw;
+			font-size:60px;
+		}
+		100%{
+			color:#e0576f;
+			font-size:30px;
+		}
+		}
+	  @keyframes alphachangehigh{
+		0%{
+			opacity:0;
+		}
+		100%{
+			opacity:1;
+		}
+	  }
+	  @keyframes alphachangelow{
+		0%{
+			opacity:0;
+		}
+		100%{
+			opacity:1;
+		}
+	  }
+	
+	@keyframes tosmall{
+		0%{
+			top: 0vh;
+			left: 0vw;
+			width: 100vw;
+			height: 100vh;
+			z-index: 7;
+		}
+		100%{
+			top: 20vh;
+			left: 20vw;
+			width: 60vw;
+			height: 30vh;
+			z-index: 2;
+		}
+	}
+	@keyframes fadetitle{
+		0%{
+			opacity:0;
+			z-index:7;
+		}
+		50%{
+			opacity:1;
+			z-index:7;
+		}
+		100%{
+			opacity:0;
+			z-index:7;
+		}
+	}
+	@keyframes fadeoutbg{
+		0%{
+			opacity:1;
+			z-index:7;
+		}
+		50%{
+			z-index:7;
+		}
+		100%{
+			opacity:0;
+			z-index:3;
+		}
+	}
+}
 @media screen and (max-width:1024px) {
   main {
     position: absolute;
@@ -50,7 +498,7 @@ html {
     background: url("human.png") center no-repeat fixed;
     background-color: rgba(255, 255, 255, 0.6);
     background-blend-mode: lighten;
-    background-size: 150vh;
+    background-size: 100vh;
   }
   /*
 	.marquee {

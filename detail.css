@@ -34,6 +34,277 @@ html {
   color: #212529;
   border-radius: 0.5rem;
 }
+@media screen and (min-width:1024px) and (max-width:1920px){
+  main {
+    position: absolute;
+    top: 10vh;
+    left: 0px;
+    height:500vh;
+    width: 100%;
+    background-color: floralwhite;
+  }
+  .MainImg {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background: url("human.png") center no-repeat fixed;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+    background-size:80%;
+	background-repeat: repeat;
+  }
+  /*
+	.marquee {
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+        gap: 1rem;
+        font-size: 2rem;
+		z-index:1;
+    }
+	.marquee_r {
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+        gap: 1rem;
+        font-size: 2rem;
+		z-index:1;
+    }
+    .marquee-inner1 {
+        animation: marquee 30s linear infinite;
+	}
+	.marquee-inner2 {
+        animation: marquee_r 30s linear infinite;
+	}
+	.marquee-inner3 {
+        animation: marquee 30s linear infinite;
+	}
+	.marquee-inner4 {
+        animation: marquee_r 30s linear infinite;
+	}
+	.marquee-inner5 {
+        animation: marquee 30s linear infinite;
+	}
+	@keyframes marquee {
+		0%{translate:0;}
+		100%{translate:calc(-100% - 1rem);}
+	}
+	@keyframes marquee_r {
+		100%{translate:0;}
+		0%{translate:calc(-100% - 1rem);}
+	}*/
+  .TitleScale {
+    position: absolute;
+    top: 20vh;
+    left: 0vw;
+    width: 100%;
+    height: 40vh;
+    z-index:2;
+    background-color: floralwhite;
+    /*box-shadow: 0 0 0 4px khaki;
+    box-sizing: border-box;*/
+	/*
+	animation-name: tosmall;
+	animation-duration: 1s;
+	animation-delay:4s;
+	animation-fill-mode: both;*/
+  }
+  .Title {
+	font-family: mochiy-pop, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    font-size: 24px;
+    text-align: center;
+    margin: 3vh 0vh;
+  }
+  .Topix {
+    position: relative;
+    margin: 2vh 0;
+    text-decoration: underline;
+  }
+   .IntoButton{
+	    position:absolute;
+        text-decoration: underline;
+	    text-align:center; 
+	    font-size:18px;
+	    width:80%;
+	    top:2vh;
+	    left:5vw;
+    }
+  .GassyukuDetail {
+    position: absolute;
+    top: 90vh;
+    width:100%;
+	height:100vh;
+    margin: 0 0vw 3vh;
+  }
+	.DetailImg{
+		position: absolute;
+		width:100%;
+		height:33vh;
+	}
+	.ImgSize{
+		height:33vh;
+		margin:2vh 0 0 2.5vw;
+		border-radius:20px;
+	}
+	.GassyukuTi {
+    margin: 2vh 0;
+    font-size: 20px;
+  }
+  .GassyukuEx {
+    margin: 2vh 0;
+    font-size: 16px;
+  }
+  .FirstdayTopix {
+    height: 90vh;
+  }
+  .FirstdayTi {
+    margin: 2vh 0;
+    font-size: 20px;
+  }
+  .FirstdayEx {
+    margin: 2vh 0;
+    font-size: 16px;
+  }
+  .LastdayDetail {
+    height: 90vh;
+  }
+  .LastdayTi {
+    margin: 2vh 0;
+    font-size: 20px;
+  }
+  .LastdayEx {
+    margin: 2vh 0;
+    font-size: 16px;
+  }
+  .Detail {
+	font-family: "uddigikyokasho-pro", sans-serif;
+	font-weight: 500;
+    font-style: normal;
+    position: absolute;
+    top: 10vh;
+	left:3vw;
+    width:90%;
+	height:55vh;
+  }
+  .FirstdayDetail {
+    position: absolute;
+    top: 190vh;
+    width:100%;
+	height:100vh;
+    margin: 0 0vw 3vh;
+  }
+	.KidsImg{
+		position: absolute;
+		width:100%;
+		height:33vh;
+	}
+  .Firstday {
+	font-family: "uddigikyokasho-pro", sans-serif;
+	font-weight: 500;
+    font-style: normal;
+    position: absolute;
+    top: 10vh;
+	left:3vw;
+    width: 90%;
+	height:55vh;
+  }
+  .LastdayDetail {
+    position: absolute;
+    top: 290vh;
+    width:100%;
+	height:100vh;
+    margin: 0 0vw 3vh;
+  }
+	.ParentImg{
+		position: absolute;
+		width:100%;
+		height:33vh;
+	}
+  .Lastday {
+	font-family: "uddigikyokasho-pro", sans-serif;
+	font-weight: 500;
+    font-style: normal;
+    position: absolute;
+    top: 10vh;
+	left:3vw;
+    width: 90%;
+	height:55vh;
+  }
+  .MainTitle {
+	font-family: mochiy-pop, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    position: absolute;
+    top: 0vh;
+	left:0vw;
+    width:100%;
+	height:7vh;
+	font-size:24px;
+	padding:3vh 0 0 3vw;
+  }
+  .MainContent {
+	font-family: "uddigikyokasho-pro", sans-serif;
+	font-weight: 500;
+    font-style: normal;
+    position: absolute;
+    top: 9vh;
+	left:0vw;
+    width:100%;
+	height:35vh;
+	font-size:18px;
+	padding:0 5vw 0 5vw;
+	line-height:1.7;
+  }
+  .IntoPage {
+    position: absolute;
+	top:30vh;
+	left:0vw;
+    width:90%;
+	height:10vh;
+    margin: 0 5% 0vh 5%;
+  }
+  .IntoForm {
+    font-family: a-otf-ud-shin-go-pr6n, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    position: absolute;
+    text-align: center;
+    buttom: 0vh;
+    right: 3vw;
+    width: 20vw;
+    padding: 5% 10vw 5%;
+    background-color: #FCD953;
+  }
+	.Scroll{
+		text-decoration: underline;
+	}
+  button.btn--circle {
+    border-radius: 50%;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    -webkit-box-shadow: 0 5px 0 #e6d900;
+    box-shadow: 0 5px 0 #e6d900;
+  }
+  button.btn--circle:hover {
+    -webkit-transform: translate(0, 3px);
+    transform: translate(0, 3px);
+    -webkit-box-shadow: 0 2px 0 #e6d900;
+    box-shadow: 0 2px 0 #e6d900;
+  }
+  button.btn-border {
+    border: 1px solid #000;
+    border-radius:20px;
+    background: floralwhite;
+  }
+  button.btn-border:hover {
+    color: #fff;
+    background: #000;
+  }
+}
 @media screen and (max-width:1024px) {
   main {
     position: absolute;
@@ -140,7 +411,7 @@ html {
     margin: 2vh 0;
     font-size: 16px;
   }
-  .FirstdayTopix {
+  .FirstdayDetail {
     height: 90vh;
   }
   .FirstdayTi {
